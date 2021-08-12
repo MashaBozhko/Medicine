@@ -1,0 +1,24 @@
+{
+    "data": [
+        { "name": "Нижний Новгород", "code": "Nizhny-Novgorod" },
+        { "name": "Дзержинск", "code": "Dzerzhinsk" },
+        { "name": "Павлово", "code": "Pavlovo" },
+        { "name": "Балахна", "code": "Balakhna" },
+        { "name": "Богородск", "code": "Bogorodsk" },
+        { "name": "Городец", "code": "Gorodets" },
+        { "name": "Лукоянов", "code": "Lukoyanov" },
+        { "name": "Кулебаки", "code": "Kulebaki" },
+        { "name": "Семенов", "code": "Semenov" },
+        { "name": "Чкаловск", "code": "Chkalovsk" },
+        { "name": "Бор", "code": "Bor" },
+        { "name": "Первомайск", "code": "Pervomaisk" },
+        { "name": "Навашино", "code": "Navashino" },
+        { "name": "Лысково", "code": "Lyskovo" },
+        { "name": "Арзамас", "code": "Arzamas" },
+        { "name": "Кстово", "code": "Kstovo" },
+        { "name": "Заволжье", "code": "Zavolzhye" },
+        { "name": "Выкса", "code": "Vyksa" },
+        { "name": "Ветлуга", "code": "Vetluga" },
+        { "name": "Урень", "code": "Level" }
+    ]
+}

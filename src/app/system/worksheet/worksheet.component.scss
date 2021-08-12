@@ -1,0 +1,245 @@
+.worksheet {
+    margin: 0 auto;
+    max-width: 1100px;
+    font-family: Noto Sans;
+}
+
+.worksheet__title {
+    width: 350px;
+    height: 58px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px 28px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #556080;
+    margin-bottom: 81px;
+}
+
+.worksheet__list {
+    width: 1100px;
+    height: 100%;
+    background: #D7F2F3;
+    border-radius: 15px;
+    padding: 60px 81px 65px 28px;
+}
+
+.worksheet__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    & hr {
+        width: 940px;
+        height: 1px;
+        margin: 12px 0px 12px 40px;
+        background: #383636;
+    }
+}
+
+.worksheet__list-item:first-child {
+    display: block;
+}
+
+.worksheet__question {
+    display: flex;
+    height: 100%;
+    margin-bottom: 23px;
+}
+
+.worksheet__question-full {
+    width: 100% !important;
+}
+
+.worksheet__question-number {
+    width: 40px;
+    background: #C4C4C4;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 7px 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383636;
+}
+
+.worksheet__question-text {
+    width: 745px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+    padding: 7px 22px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383636;
+    & span {
+        font-weight: 400;
+    }
+}
+
+.worksheet__item {
+    width: 951px;
+    margin-bottom: 12px;
+    margin-left: 40px;
+}
+
+.worksheet__item-basic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.worksheet__item-basic .worksheet__question-sub {
+    width: 745px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 7px 22px;
+    display: flex;
+}
+
+.worksheet__question-sub-number {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383636;
+    margin-right: 5px;
+}
+
+.worksheet__question-sub-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383636;
+}
+
+.worksheet__answer {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.worksheet__answer-full {
+    width: 680px;
+    margin: 0 auto;
+}
+
+.worksheet__answer-input {
+    width: 178px;
+    background: #13757A;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 22px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF !important;
+    margin-bottom: 23px;
+}
+
+.worksheet__answer-inputtext {
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF !important;
+    &::placeholder {
+        color: #FFFFFF !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+        border: none;
+    }
+}
+
+.worksheet__answer-last {
+    width: 940px !important;
+    margin-left: 40px;
+}
+
+.worksheet__answer-item {
+    text-align: center;
+}
+
+.worksheet__item-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.worksheet__item-add .worksheet__question-sub {
+    display: flex;
+    justify-content: space-between;
+    width: 745px;
+}
+
+.worksheet__question-sub-text-white {
+    width: 745px;
+    height: 100%;
+    background: #13757A;
+    border-radius: 0px 0px 10px 10px;
+    padding: 22px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.worksheet__question-sub-que {
+    width: 265px;
+    height: 100%;
+    background: #13757A;
+    border-radius: 0px 0px 10px 10px;
+    padding: 22px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.worksheet__question-sub-i {
+    width: 440px;
+    height: 100%;
+    background: #13757A;
+    border-radius: 0px 0px 10px 10px;
+    padding: 22px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.worksheet__question-sub-inputtext {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF !important;
+    &::placeholder {
+        color: #FFFFFF !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+        border: none;
+    }
+}
+
+.worksheet__link {
+    width: 166px;
+    background: #3CB5BB;
+    border-radius: 15px;
+    margin: 83px auto 0;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF !important;
+}

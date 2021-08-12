@@ -1,0 +1,74 @@
+<div class="stepone-wrapper">
+    <div class="stepone__service">
+        <div class="stepone__service-item">
+            <p class="stepone__service-text">По полису ОМС</p>
+            <input class="stepone__service-input" type="radio" name="service" id="oms">
+        </div>
+        <div class="stepone__service-item">
+            <p class="stepone__service-text">Платные услуги</p>
+            <input class="stepone__service-input" type="radio" name="service" id="paid">
+        </div>
+        <div class="stepone__service-item">
+            <p class="stepone__service-text">По полису ДМС</p>
+            <input class="stepone__service-input" type="radio" name="service" id="dms">
+        </div>
+    </div>
+
+    <h3 class="stepone__input-text">Тип поликлиники:</h3>
+    <p-autoComplete [(ngModel)]="selectedClinicAdvanced" [suggestions]="filteredClinics" (completeMethod)="filterClinic($event)" field="name" [dropdown]="true">
+        <ng-template let-clinic pTemplate="item">
+            <div class="country-item">
+                <div>{{clinic.name}}</div>
+            </div>
+        </ng-template>
+    </p-autoComplete>
+
+    <h3 class="stepone__input-text">Регион:</h3>
+    <p-autoComplete [(ngModel)]="selectedRegionAdvanced" [suggestions]="filteredRegions" (completeMethod)="filterRegion($event)" field="name" [dropdown]="true">
+        <ng-template let-region pTemplate="item">
+            <div class="country-item">
+                <div>{{region.name}}</div>
+            </div>
+        </ng-template>
+    </p-autoComplete>
+
+    <h3 class="stepone__input-text">Населенный пункт:</h3>
+    <p-autoComplete [(ngModel)]="selectedLocalityAdvanced" [suggestions]="filteredLocalitys" (completeMethod)="filterLocality($event)" field="name" [dropdown]="true">
+        <ng-template let-locality pTemplate="item">
+            <div class="country-item">
+                <div>{{locality.name}}</div>
+            </div>
+        </ng-template>
+    </p-autoComplete>
+
+    <h3 class="stepone__input-text">Район:</h3>
+    <p-autoComplete [(ngModel)]="selectedDistrictAdvanced" [suggestions]="filteredDistricts" (completeMethod)="filterDistrict($event)" field="name" [dropdown]="true">
+        <ng-template let-district pTemplate="item">
+            <div class="country-item">
+                <div>{{district.name}}</div>
+            </div>
+        </ng-template>
+    </p-autoComplete>
+
+    <h3 class="stepone__input-text">Название поликлиники:</h3>
+    <p-autoComplete [(ngModel)]="selectedPolyclinicAdvanced" [suggestions]="filteredPolyclinics" (completeMethod)="filterPolyclinic($event)" field="name" [dropdown]="true">
+        <ng-template let-polyclinic pTemplate="item">
+            <div class="country-item">
+                <div>{{polyclinic.name}}</div>
+            </div>
+        </ng-template>
+    </p-autoComplete>
+
+    <h3 class="stepone__visit-text">Тип визита:</h3>
+    <div class="stepone__visit-list">
+        <p-selectButton [options]="visitOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value"></p-selectButton>
+    </div>
+
+    <h3 class="stepone__question-text">Хотите пройти анкетирование?</h3>
+    <div class="stepone__question-list">
+        <p-selectButton [options]="queOptions" [(ngModel)]="value2" optionLabel="label" optionValue="value"></p-selectButton>
+    </div>
+
+    <a class="stepone__link-next" *ngIf="value2==='yes'" type="submit" [routerLink]="['','clinic-appointment', 'step-two-generaltest']" routerLinkActive="active">Далее</a>
+    <a class="stepone__link-next" *ngIf="value2==='no'" type="submit" [routerLink]="['','clinic-appointment', 'step-two-record']" routerLinkActive="active">Далее</a>
+</div>

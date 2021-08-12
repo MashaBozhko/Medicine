@@ -1,0 +1,270 @@
+<div class="main__info">
+
+    <section class="top-info">
+        <div class="container">
+            <div class="top-info__wrapper">
+                <img class="top-info__img1" src="./../../../assets/pics/main_top-slogan.svg" alt="info">
+                <img class="top-info__img2" src="./../../../assets/pics/main_top-img.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="statistic">
+        <div class="container">
+            <div class="statistic__wrapper">
+                <h2 class="main-title">Статистика выздоровевших за всё время</h2>
+                <div class="chart" *ngIf="ChatFlag">
+                    <p-chart type="line" [data]="lineStylesData"></p-chart>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="functions">
+        <div class="container">
+            <h2 routerLinkActive="active" class="main-title" style="margin-bottom: 130px;">Функции сервиса</h2>
+            <div class="functions__grid">
+                <div id="DIV_1">
+                    <div id="DIV_2">
+                        <div id="DIV_3">
+                        </div>
+                        <div id="DIV_4">
+                            <div id="DIV_5">
+                                <div id="DIV_6">
+                                    Дневник здоровья
+                                </div>
+                                <div id="DIV_7">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DIV_8" routerLink="/profile/receptions">
+                            <div id="DIV_9">
+                                <div id="DIV_10">
+                                    Выписать рецепт
+                                </div>
+                                <div id="DIV_11">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DIV_12" routerLink="/medical-card">
+                            <div id="DIV_13">
+                                <div id="DIV_14">
+                                    Медкарта
+                                </div>
+                                <div id="DIV_15">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DIV_16" routerLink="/diagnostics">
+                            <div id="DIV_17">
+                                <div id="DIV_18">
+                                    Диагностика
+                                </div>
+                                <div id="DIV_19">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DIV_20" routerLink="/recording/type-visit">
+                            <div id="DIV_21">
+                                <div id="DIV_22">
+                                    Запись
+                                </div>
+                                <div id="DIV_23">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DIV_24" routerLink="/self-diagnostics">
+                            <div id="DIV_25">
+                                <div style="left: -20px;" id="DIV_26">
+                                    Самодиагностика
+                                </div>
+                                <div id="DIV_27">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="DIV_28" routerLink="/profile/san-resort-card">
+                            <div id="DIV_29">
+                                <div style="left: -35px" id="DIV_30">
+                                    Сан-курортная карта
+                                </div>
+                                <div id="DIV_31">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="functions__grid-item">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="news">
+        <div class="container" *ngIf="NewsFlag">
+            <h2 class="main-title">Актуальные новости</h2>
+
+
+            <!---------------------------------------------->
+            <p-carousel [value]="singleCategory" styleClass="custom-carousel" [numVisible]="3" [numScroll]="3" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+
+                <ng-template let-item pTemplate="item">
+
+                    <div class="news__list-item">
+
+
+                        <a class="news__list-link" href="#">
+                            <img class="news__list-img" src={{item.image_title_url}} alt="">
+                        </a>
+
+                        <h4 class="news__list-title">
+                            {{item.title}}
+                        </h4>
+
+                        <p class="news__list-text">
+                            {{singleText(item.text)}}
+                        </p>
+
+                        <p class="news__list-date">
+                            {{item.date}}
+                        </p>
+
+                    </div>
+
+                </ng-template>
+
+            </p-carousel>
+            <!---------------------------------------------->
+
+            <hr>
+            <a class="news__link" [routerLink]="['', 'main-news']" routerLinkActive="active">Ко всем новостям</a>
+
+
+        </div>
+    </section>
+
+    <section class="instruction">
+        <h2 class="main-title">Инструкция по сервису</h2>
+
+        <div class="instruction-wrapper">
+
+            <div class="step-top" id="step">
+                <a id="step-descr" href="#">
+                    <p class="instruction-title">Шаг первый</p>
+                    <p class="instruction-text">Авторизируйтесь</p>
+                </a>
+                <div>
+                    <img class="step-top" src="../../../assets/pics/step1.svg" alt="">
+                </div>
+            </div>
+
+            <div class="step-bot" id="step">
+                <div class="step-line">
+                    <img class="step-bot" src="../../../assets/pics/step2.svg" alt="">
+                </div>
+                <a id="step-descr" href="#">
+                    <p class="instruction-title">Шаг второй</p>
+                    <p class="instruction-text">Пройдите самодиагностику</p>
+                </a>
+            </div>
+
+            <div class="step-top" id="step">
+                <a id="step-descr" href="#">
+                    <p class="instruction-title">Шаг третий</p>
+                    <p class="instruction-text">Запишитесь к врачу</p>
+                </a>
+                <div class="step-line">
+                    <img class="step-to" src="../../../assets/pics/step3.svg" alt="">
+                </div>
+            </div>
+
+            <div class="step-bot" id="step">
+                <div class="step-line">
+                    <img class="step-bo" class="step-bot" src="../../../assets/pics/step4.svg" alt="">
+                </div>
+                <a id="step-descr" href="#">
+                    <p class="instruction-title">Шаг четвёртый</p>
+                    <p class="instruction-text">Пока ожидаете своей очереди, ознакомьтесь с полным функционалом сервиса</p>
+                </a>
+            </div>
+
+        </div>
+
+        <hr>
+        <a class="instruction__link" href="#">Все инструкции</a>
+
+    </section>
+
+    <section class="answers">
+        <div class="container">
+            <h2 class="main-title">Частые вопросы</h2>
+            <div class="answers__wrapper">
+                <p-accordion>
+                    <p-accordionTab header="Как происходит  расчет за платные медицинские услуги?">
+                        Расчет за платные медицинские услуги происходит в клинике, на сервисе ничего не опачивается.
+                    </p-accordionTab>
+
+                    <p-accordionTab header="Как записаться на обследование?">
+                        Чтобы записаться на обследование, необходимо перейти во вкладку “Дигностика”, нажать на карточку “Обследование” и ввести необходимые данные. За день до обследования Вам придет напоминание о нем в раздел “Уведомления”, который расположен в личном кабинете.
+                    </p-accordionTab>
+
+                    <p-accordionTab header="Как зарегистироваться на веб-сервисе?">
+                        1. В меню нажмите на кнопку “Войти”;
+                        <br> 2. В форме входа, под кнопкной “Войти”, нажмите зарегистрируйтесь;
+                        <br> 3. Введите почту, после нажатия на кнопку “Получить код” Вы на почте увидете код, который необходимо ввести;
+                        <br> 4. Далее нажимаете на кнопку “Войти”;
+                        <br> 5. Закончите регистрацию: введите необходимые данные и нажмите на кнопку “Зарегистрируйтесь”.
+                    </p-accordionTab>
+
+                    <p-accordionTab header="Для чего проходить анкетирование?">
+                        С помощью анкетирования вы узнаете к какому специалисту вам необходимо обратиться, без дополнительного посещения терапевта. Только при прохождении анкетирования Вы сможете записаться на конкретное время. Анкетирование для диспансеризацию позволит сэкономить
+                        вам время прохождения осмотра.
+                    </p-accordionTab>
+
+                    <p-accordionTab header="Что такое электронная медкарта?">
+                        Электронная медкарта - это замена бумажной карты. Вы получаете информацию о своем здоровье, диагностике, лечении в поликлиниках, выписанные рецепты и другие данные, просматривать которые можете в любое время. Доступны следующие разделы: “Моя карта”, “Мои
+                        рецепты”, “Мои анализы”, “Мои исследования”, “Мои выписки”, “Мои прививки”, “Мои справки”, “Мои больничные”. Для доступа к электронной медкарте Вам необходимо зарегистрироваться на сервисе или авторизоваться.
+                    </p-accordionTab>
+                </p-accordion>
+
+
+            </div>
+            <div class="answers__button">
+                <p-button class="answers__p-button" (click)="showBasicDialog()" label="Задать вопрос"></p-button>
+                <p-dialog header="Задать вопрос" [(visible)]="displayBasic" [style]="{width: '1350px'}" [baseZIndex]="10000">
+                    <div class="answers__form-wrapper">
+                        <form class="answers__form" action="" method="get">
+                            <div class="answers__form-item">
+                                <input class="answers__form-theme" type="text" name="theme" placeholder="Тема вопроса">
+                                <textarea class="answers__form-textarea" name="answer" id="" cols="30" rows="10" placeholder="Вопрос"></textarea>
+                            </div>
+                            <div class="answers__form-item">
+                                <p class="answers__form-title">Лечебное учреждение *</p>
+                                <input class="answers__form-input answers__form-institution" type="text" name="institution">
+
+                                <p class="answers__form-title">Ваше имя *</p>
+                                <input class="answers__form-input answers__form-name" type="text" name="name">
+
+                                <p class="answers__form-title">E-mail *</p>
+                                <input class="answers__form-input answers__form-email" type="text" name="email">
+                            </div>
+                            <button class="answers__form-btn" type="submit">Отправить</button>
+                            <button class="answers__form-btn" type="reset">Сбросить</button>
+                        </form>
+                    </div>
+                    <ng-template pTemplate="footer">
+                        <p-button icon="pi pi-check" (click)="displayBasic=false" label="Ок" styleClass="p-button-text"></p-button>
+                    </ng-template>
+                </p-dialog>
+            </div>
+
+
+        </div>
+    </section>
+
+
+</div>

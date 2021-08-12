@@ -1,0 +1,160 @@
+<div class="main__info">
+
+    <div class="container">
+
+        <!-- doctor page -->
+        <div class="doctor__page">
+            <div class="doctor__page-main">
+
+                <div class="doctor__page-wrapper">
+                    <div class="doctor__page-item">
+                        <div class="doctor__page-rating">
+                            <img class="doctor__page-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="doctor__page-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="doctor__page-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="doctor__page-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="doctor__page-star" src="./../../../assets/pics/star.svg" alt="">
+                        </div>
+                        <div class="doctor__avatar">
+                            <img class="doctor__page-avatar" src="./../../../assets/pics/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__page-item">
+                        <div class="doctor__page-info">
+                            <div class="doctor__page-info-item">
+                                <h2 class="doctor__page-name">{{doc.last_name}} {{doc.first_name}} {{doc.patronymic}}</h2>
+                                <p class="doctor__page-prof">Акушер Гинеколог Эндокринолог</p>
+                                <p class="doctor__page-exp">Стаж: {{doc.work_experience}} лет</p>
+                                <p class="doctor__page-category">Врач высшей категории</p>
+                                <p class="doctor__page-education">Образование: ....</p>
+                                <p class="doctor__page-accreditation">Аккредитация:</p>
+                            </div>
+                            <a class="doctor__page-link" href="#">Написать сообщение</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor__page-address">
+                    <div class="doctor__page-map" id="map"
+                     style="min-width:452px; height:328px;" ></div>
+                    <div class="doctor__page-address-item">
+                        <div class="doctor__page-address-info">
+                            <h3 class="doctor__page-address-title">Место работы:</h3>
+                            <p class="doctor__page-address-text">
+                                <span class="doctor__page-address-h">{{clinic.name}}</span>
+                            </p>
+                            <p class="doctor__page-address-text">
+                                <span class="doctor__page-address-h">Адрес: 
+                                </span>{{clinic.placement.index}}, г. {{clinic.placement.city.name}}, ул. {{clinic.placement.street}} {{clinic.placement.home}};
+                            </p>
+                            <p class="doctor__page-address-text">
+                                <span class="doctor__page-address-h">Регистратура: </span>{{clinic.clinic_contacts.main_phone}}
+                            </p>
+                            <p class="doctor__page-address-text">
+                                <span class="doctor__page-address-h">Часы работы: </span>ежедневно 7.00-20.00
+                            </p>
+                            <p class="doctor__page-address-text">
+                                <span class="doctor__page-address-h">E-mail: </span>{{clinic.email}}
+                            </p>
+                        </div>
+                        <a class="doctor__page-link" href="#">Записаться на прием</a>
+                    </div>
+                </div>
+
+                <div class="doctor__info">
+                    <h2 class="doctor__info-title">Информация о враче</h2>
+                    <p class="doctor__info-text">
+                        {{doc.last_name}} {{doc.first_name}} {{doc.patronymic}} - врач высшей категории, стаж {{doc.work_experience}} лет. Скидка на прием врача! Все отзывы о враче. Запись онлайн или по телефону.
+                    </p>
+                    <p class="doctor__info-text">
+                        Занимается диагностикой, профилактикой и лечением заболеваний гинекологического профиля, таких как ЗППП (заболевания, передающиеся половым путем), молочница, эрозия шейки матки, бесплодие (различной этиологии), воспалительные заболевания (вульвит, вагинит)
+                    </p>
+                </div>
+
+                <div class="doctor__education">
+                    <h2 class="doctor__education-title">Образование</h2>
+                    <p class="doctor__education-text">
+                        <span class="doctor__education-year">2003</span> - Аспирантура по специальности "Гинеколог-эндокринолог", Самарский государственный медицинский университет</p>
+                    <p class="doctor__education-text">
+                        <span class="doctor__education-year">1997</span> - Ординатура по специальности "Гинекология", Тюменская государственная медицинская академия
+                    </p>
+                    <p class="doctor__education-text">
+                        <span class="doctor__education-year">1996</span> - Диплом по специальности "Лечебное дело (Лечебно-профилактическое дело)", Днепропетровская государственная медицинская академия
+                    </p>
+                </div>
+
+                <div class="doctor__qualification">
+                    <h2 class="doctor__qualification-title">Курсы повышения квалификации</h2>
+                    <p class="doctor__qualification-text">
+                        <span class="doctor__qualification-year">2018</span> - "Ультразвуковая диагностика", Европейский Университет "Бизнес треугольник"
+                    </p>
+                    <p class="doctor__qualification-text">
+                        <span class="doctor__qualification-year">2018</span> - "Акушерство и гинекология", Росcийский университет дружбы народов
+                    </p>
+                    <p class="doctor__qualification-text">
+                        <span class="doctor__qualification-year">2015</span> - "Синергизм хирургического и консервативного лечения в интимной пластике", Государственный национальный исследовательский медицинский универстите им. Н.И. Пирогова
+                    </p>
+                    <p class="doctor__qualification-text">
+                        <span class="doctor__qualification-year">2012</span> - "Акушерство и гинекология", Росийский институ Дружбы народов
+                    </p>
+                </div>
+
+                <div class="doctor_specialization">
+                    <h2 class="doctor__specialization-title">Специализация</h2>
+                    <h3 class="doctor__specialization-title-mini">Диагностика и лечение следующих заболеваний:</h3>
+                    <ol class="doctor__specialization-list">
+                        <li class="doctor__specialization-item">бесплодие (различной этиологии);</li>
+                        <li class="doctor__specialization-item">воспалительные заболевания (вульвит, вагинит и др.);</li>
+                        <li class="doctor__specialization-item">заболевания, передающиеся половым путем (ЗППП): хламидиоз, уреаплазмоз, микоплазмоз и др;</li>
+                        <li class="doctor__specialization-item">молочница (кандидоз);</li>
+                        <li class="doctor__specialization-item">эрозия шейки матки.</li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="doctor__page-comments">
+                <h2 class="doctor__comment-title">Отзывы </h2>
+
+                <div class="doctor__comment">
+                    <div class="doctor__comment-wrapper">
+                        <h2 class="doctor__comment-main">Отлично</h2>
+                        <p class="doctor__comment-text">
+                            Великолепный врач, очень обходительная, вежливая, располагающая и приветливая. После лечения уже чувствуются улучшения, хотя прописанный курс еще не окончен. Я нашла своего врача.
+                        </p>
+                    </div>
+                    <p class="doctor__comment-info">Дарья, 10 июня 2021, прием в клинике Медицинский центр ЕвроМед на Маяковской</p>
+                </div>
+
+                <div class="doctor__comment">
+                    <div class="doctor__comment-wrapper">
+                        <h2 class="doctor__comment-main">Отлично</h2>
+                        <p class="doctor__comment-text">
+                            Великолепный врач, очень обходительная, вежливая, располагающая и приветливая. После лечения уже чувствуются улучшения, хотя прописанный курс еще не окончен. Я нашла своего врача.
+                        </p>
+                    </div>
+                    <p class="doctor__comment-info">Дарья, 10 июня 2021, прием в клинике Медицинский центр ЕвроМед на Маяковской</p>
+                </div>
+
+                <div class="doctor__comment">
+                    <div class="doctor__comment-wrapper">
+                        <h2 class="doctor__comment-main">Отлично</h2>
+                        <p class="doctor__comment-text">
+                            Великолепный врач, очень обходительная, вежливая, располагающая и приветливая. После лечения уже чувствуются улучшения, хотя прописанный курс еще не окончен. Я нашла своего врача.
+                        </p>
+                    </div>
+                    <p class="doctor__comment-info">Дарья, 10 июня 2021, прием в клинике Медицинский центр ЕвроМед на Маяковской</p>
+                </div>
+
+                <div class="doctor__comment-btns">
+                    <a class="doctor__comment-btn" href="#"><span>Показать еще 228 отзывов</span></a>
+                    <a class="doctor__comment-btn" href="#">
+                        <span>Оставить отзыв</span>
+                        <img class="doctor__comment-btn-img" src="./../../../assets/pics/comment__edit.svg" alt="edit">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

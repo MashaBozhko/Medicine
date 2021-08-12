@@ -1,0 +1,68 @@
+<div class="clinic">
+
+    <div class="clinic__wrapper">
+        <h1 class="clinic-title">Платные услуги</h1>
+
+        <p-accordion [multiple]="true">
+            <p-accordionTab class="paid__list-item" header="Расписание">
+                <h4 class="paid__list-title">ГРАФИК РАБОТЫ СПЕЦИАЛИСТОВ ОТДЕЛЕНИЯ ПЛАТНЫХ МЕДИЦИНСКИХ УСЛУГ:</h4>
+                <p class="paid__list-text">ВРЕМЯ РАБОТЫ: С 8:00 - 16:00</p>
+                <p class="paid__list-text">ТЕХ. ПЕРЕРЫВ: С 12.00 - 12.30</p>
+                <p class="paid__list-text">ВЫХОДНЫЕ: СУББОТА, ВОСКРЕСЕНЬЕ ТЕЛ. (831) 246-46-82</p>
+            </p-accordionTab>
+
+            <p-accordionTab class="paid__list-item" header="Прейскурант на платные услуги">
+                <div class="paid__list-search">
+                    <input class="paid__list-search-input" type="text">
+                    <img class="paid__list-search-img" src="" alt="">
+                </div>
+                <table class="paid__table">
+                    <tr>
+                        <th>Услуга:</th>
+                        <th>Стоимость, руб:</th>
+                        <th>Код услуги:</th>
+                    </tr>
+
+                    <tr>
+                        <td>Общий (клинический) анализ крови развернутый</td>
+                        <td>250</td>
+                        <td>В03.016.003</td>
+                    </tr>
+
+                    <tr>
+                        <td>Исследование уровня эритроцитов в крови</td>
+                        <td>105</td>
+                        <td>A12.05.118</td>
+                    </tr>
+
+                    <tr>
+                        <td>Исследование уровня лейкоцитов в крови</td>
+                        <td>105</td>
+                        <td>A12.05.119</td>
+                    </tr>
+
+                    <tr>
+                        <td>Исследование уровня тромбоцитов в крови</td>
+                        <td>135</td>
+                        <td>A12.05.120</td>
+                    </tr>
+
+                    <tr>
+                        <td>Определение цветового показателя</td>
+                        <td>60</td>
+                        <td>A12.05.124</td>
+                    </tr>
+
+                    <button class="paid__table-btn">Просмотреть все</button>
+
+                </table>
+            </p-accordionTab>
+
+        </p-accordion>
+        <a class="paid__list-item" href="#">
+            <span>Договор на платные услуги</span>
+            <img class="paid__list-img" src="" alt="">
+        </a>
+
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="covid">
+        <div class="covid__menu">
+
+            <div class="covid__menu-item">
+                <a class="covid__menu-link covid__menu-link-active" [routerLink]="['', 'profile','covid','test-covid']" routerLinkActive="active">Тест</a>
+            </div>
+
+            <div class="covid__menu-item">
+                <a class="covid__menu-link" [routerLink]="['', 'profile','covid','result-test']" routerLinkActive="active">Результаты</a>
+            </div>
+
+            <div class="covid__menu-item">
+                <a class="covid__menu-link" [routerLink]="['', 'profile','covid','vaccination', 'info']" routerLinkActive="active">Запись на вакцинацию</a>
+            </div>
+
+            <div class="covid__menu-item">
+                <a class="covid__menu-link" [routerLink]="['', 'profile','covid','qr-code']" routerLinkActive="active">QR-код</a>
+            </div>
+
+            <div class="covid__menu-item">
+                <a class="covid__menu-link" [routerLink]="['', 'profile','covid','antibodies']" routerLinkActive="active">Антитела</a>
+            </div>
+
+            <div class="covid__menu-item">
+                <a class="covid__menu-link" [routerLink]="['', 'profile','covid','pcr']" routerLinkActive="active">ПЦР</a>
+            </div>
+        </div>
+        <div class="covid-item">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

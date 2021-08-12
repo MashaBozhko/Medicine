@@ -1,0 +1,57 @@
+<!-- <div class="card">
+    <p-toast></p-toast>
+    <p-steps [model]="items" [readonly]="true"></p-steps>
+</div> -->
+
+<div class="step">
+    <p class="step__item-title">Делали ли Вы прививку от гриппа или пневмококка Если «да» указать дату</p>
+    <div class="step__item">
+        <input class="step__item-input" type="radio" name="answer-1">
+        <span class="step__item-text">Да</span>
+        <input class="step__item-input" type="radio" name="answer-1">
+        <span class="step__item-text">Нет</span>
+    </div>
+</div>
+
+<div class="step">
+    <p class="step__item-title">Когда?</p>
+    <input class="step__item-input" type="date" name="date">
+</div>
+
+<div class="step">
+    <p class="step__item-title">Были ли у Вас аллергические реакции?</p>
+    <div class="step__item">
+        <input class="step__item-input" type="radio" name="answer-2">
+        <span class="step__item-text">Да</span>
+        <input class="step__item-input" type="radio" name="answer-2">
+        <span class="step__item-text">Нет</span>
+    </div>
+</div>
+
+<!--  -->
+<div class="step">
+    <p class="step__item-title">Аллергические реакции:</p>
+    <div class="step__item">
+        <p-multiSelect [options]="alergics" [(ngModel)]="selectedAlergics" defaultLabel="Выберите:" optionLabel="name" selectedItemsLabel="{0} выбрано"></p-multiSelect>
+    </div>
+</div>
+
+<div class="step">
+    <p class="step__item-title">Есть ли у Вас хронические заболевания?</p>
+    <div class="step__item">
+        <input class="step__item-input" type="radio" name="answer-3">
+        <span class="step__item-text">Да</span>
+        <input class="step__item-input" type="radio" name="answer-3">
+        <span class="step__item-text">Нет</span>
+    </div>
+</div>
+
+<!--  -->
+<div class="step">
+    <p class="step__item-title">Хронические заболевания:</p>
+    <div class="step__item">
+        <p-multiSelect [options]="chronics" [(ngModel)]="selectedChronics" defaultLabel="Выберите:" optionLabel="name" selectedItemsLabel="{0} выбрано"></p-multiSelect>
+    </div>
+</div>
+
+<a class="step__item-btn" [routerLink]="['', 'profile','covid','vaccination', 'result']" routerLinkActive="active">Готово</a>

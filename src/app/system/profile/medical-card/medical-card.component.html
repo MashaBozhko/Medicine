@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="medmap">
+        <div class="medmap__menu">
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link medmap__menu-link-active" [routerLink]="['', 'profile','medical-card','my-map']" routerLinkActive="active">Моя карта</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-recipes']" routerLinkActive="active">Мои рецепты</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-analyzes']" routerLinkActive="active">Мои анализы</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-research']" routerLinkActive="active">Мои исследования</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-discharge']" routerLinkActive="active">Мои выписки</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-vaccination']" routerLinkActive="active">Мои прививки</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-reference']" routerLinkActive="active">Мои справки</a>
+            </div>
+
+            <div class="medmap__menu-item">
+                <a class="medmap__menu-link" [routerLink]="['', 'profile','medical-card','my-hospitals']" routerLinkActive="active">Мои больничные</a>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

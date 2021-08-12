@@ -1,0 +1,55 @@
+<header class="header" id="top">
+
+    <div class="header-search">
+        <div class="header-search__item">
+            <input class="header-search__input" placeholder="Что вы ищете?" type="text">
+            <button class="header-search__btn">
+              <img src="../../../../../assets/pics/header-search.png" alt="">Найти
+            </button>
+        </div>
+
+        <div class="header-search__item">
+            <div class="header-search__city">
+                <img src="../../../../../assets/pics/header-city.svg" alt=""> Нижний Новгород
+            </div>
+            <div class="header-search__clinic">
+                <img src="../../../../../assets/pics/header-clinic.svg">
+                <p-dropdown [options]="clinics" onclick="" [(ngModel)]="selectedClinicCode" optionLabel="name" optionValue="code" placeholder="Выберите поликлинику"></p-dropdown>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="header-nav">
+        <a class="logo" [routerLink]="['', 'main']" id="header-logo" routerLinkActive="active">
+            <img class="logo-img" src="../../../../../assets/pics/logo.png" alt="">
+        </a>
+        <div class="menu__list-item" id="header-nav1" routerLinkActive="active">
+            <a class="menu__list-link" [routerLink]="['', 'clinics']">Клиники</a>
+        </div>
+        <div class="menu__list-item" id="header-nav2" routerLinkActive="active">
+            <a class="menu__list-link" [routerLink]="['', 'doctors']">Врачи</a>
+        </div>
+        <div class="menu__list-item" id="header-nav3" routerLinkActive="active">
+            <a class="menu__list-link" [routerLink]="['', 'recording','type-visit']">Запись</a>
+
+        </div>
+        <div class="menu__list-item" id="header-nav4" routerLinkActive="active">
+            <a class="menu__list-link" [routerLink]="['', 'diagnostics']">Диагностика</a>
+        </div>
+        <div class="menu__list-item" id="header-nav5">
+            <a class="menu__list-link">Справочник заболеваний</a>
+        </div>
+        <div class="menu__list-item" id="header-nav6" routerLinkActive="active">
+            <a class="menu__list-link" [routerLink]="['', 'self-diagnostics']">Самодиагностика</a>
+
+        </div>
+        <div class="menu__list-item" id="header-nav7">
+            <img class="menu__list-user" src="../../../../../assets/pics/header-profile.svg" width="44px" height="44px" alt="">
+            <a class="menu__list-link" [routerLink]="['', 'profile','personal-area']" routerLinkActive="active">Иванов И.И.</a>
+            <img class="menu__list-arrow" src="../../../../../assets/pics/menu__arrow.svg" width="18px" height="18px" alt="">
+        </div>
+    </div>
+
+</header>

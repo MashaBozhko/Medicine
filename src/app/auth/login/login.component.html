@@ -1,0 +1,29 @@
+<div class="sign">
+    <div class="container-stand">
+        <div class="sign__wrapper">
+            <div class="sign__block">
+                <h2 class="sign__block-title">Авторизация</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="sign__form">
+
+                    <h4 class="sign__form-title">Телефон/mail</h4>
+                    <input formControlName="email" class="sign__form-input" type="text">
+                    <p class="form-error" *ngIf="registerForm.get('email').errors && registerForm.get('email').touched">
+                        Email обязателен</p>
+
+                    <h4 class="sign__form-title">Пароль</h4>
+                    <input formControlName="password" class="sign__form-input" type="password">
+                    <p class="form-error" *ngIf="registerForm.get('password').errors && registerForm.get('password').touched">
+                        Пароль обязателен и должен содержать не менее 4 символов</p>
+
+                    <button type="submit" [disabled]="registerForm.invalid" class="sign__form-btn">Войти</button>
+                    <div class="sign__form-text">Если нет аккаунта,
+                        <h3 class="sign__form-reg" (click)="goToRegistr()">Зарегистрируйтесь!</h3>
+                    </div>
+                    <p class="sign__form-text">
+                        <a class="sign__form-password" href="#">Забыли пароль?</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

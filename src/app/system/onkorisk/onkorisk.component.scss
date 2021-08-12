@@ -1,0 +1,102 @@
+.cancer {
+    width: 967px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin: 100px auto 100px;
+    padding: 60px;
+}
+
+.cancer__window {
+    max-width: 100%;
+    margin: 0 auto 68px;
+}
+
+.cancer__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cancer__item-que {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    width: 322px;
+    height: 100%;
+    background: linear-gradient(180deg, #3BB3BB 0%, #F1F1F1 100%);
+    border-radius: 15px;
+    padding: 32px;
+    text-align: center;
+}
+
+.cancer__item-answer {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    width: 524.88px;
+    height: 100%;
+    background: linear-gradient(180deg, #3BB3BB 0%, #F1F1F1 100%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.cancer__item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-width: 250px;
+    max-width: 315px;
+}
+
+.cancer__item-point {
+    margin: 0 5px;
+    max-width: 50%;
+}
+
+.cancer__item-name {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.cancer__window-title {
+    margin-bottom: 31px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.cancer__window-interpritation {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3BB3BB;
+}
+
+.cancer-link {
+    width: 481px;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    text-align: center;
+    padding: 23px;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}

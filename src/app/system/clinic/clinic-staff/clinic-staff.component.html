@@ -1,0 +1,208 @@
+<div class="clinic">
+
+    <div class="clinic__wrapper">
+        <h1 class="clinic-title">Сотрудники поликлиники</h1>
+
+        <div class="staff">
+            <div class="staff__search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> 
+                            <img class="form__search-img" src="./../../../assets/pics/search.svg" alt="">
+                        </button>
+                </form>
+            </div>
+
+            <!-- dropdown -->
+            <div class="staff-list">
+                <div class="staff-item">
+                    <div class="staff__title">
+                        <h3 class="staff__title-text">
+                            <a class="consultetion__title-link" href="#">Специальность</a>
+                        </h3>
+                        <img class="staff__title-img" (click)="openSpecialization()" src="./../../../assets/pics/arrow-mini.svg" alt="">
+                    </div>
+                    <ul class="staff__dropdown">
+                        <li *ngIf="dropdown_flag" class="staff__dropdown-item">
+                            <a class="consultetion__title-link" href="#">Гастроэнтеролог</a>
+                        </li>
+                        <li *ngIf="dropdown_flag" class="staff__dropdown-item">
+                            <a class="consultetion__title-link" href="#">Гинеколог</a>
+                        </li>
+                        <li *ngIf="dropdown_flag" class="staff__dropdown-item">
+                            <a class="consultetion__title-link" href="#">Невролог</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="staff-item">
+                    <div class="staff__title">
+                        <h3 class="staff__title-text">
+                            <a class="consultetion__title-link" href="#">Специальность</a>
+                        </h3>
+                        <img class="staff__title-img" (click)="openSpecialization()" src="./../../../assets/pics/arrow-mini.svg" alt="">
+                    </div>
+                    <ul class="staff__dropdown">
+                        <li *ngIf="dropdown_flag" class="staff__dropdown-item">
+                            <a class="consultetion__title-link" href="#">Гастроэнтеролог</a>
+                        </li>
+                        <li *ngIf="dropdown_flag" class="staff__dropdown-item">
+                            <a class="consultetion__title-link" href="#">Гинеколог</a>
+                        </li>
+                        <li *ngIf="dropdown_flag" class="staff__dropdown-item">
+                            <a class="consultetion__title-link" href="#">Невролог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="staff-list-2">
+                <button class="staff-list-btn staff-item">
+                        <p class="staff-btn-text">Применить фильтр</p>
+                        <img class="staff-btn-img" src="../../../assets/pics/yes.png" alt="">
+                    </button>
+                <button class="staff-list-btn staff-item">
+                        <p class="staff-btn-text">Очистить фильтр</p>
+                        <img class="staff-btn-img" src="../../../assets/pics/no.png" alt="">
+                    </button>
+            </div>
+
+            <!-- staff field -->
+            <div class="staff__field">
+                <div class="staff__field-main">
+                    <div class="staff__field-item">
+                        <a [routerLink]="['', 'staff']" routerLinkActive="active">
+                            <img class="staff__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+                        </a>
+
+                        <div class="staff__field-rating">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="staff__field-item">
+                        <h5 class="staff__field-prof">Акушер Гинеколог Эндокринолог</h5>
+                        <h2 class="staff__field-name">Гутникова Виктория Яковлевна</h2>
+                        <div class="staff__field-wrapper">
+                            <div class="staff__field-info">
+                                <p class="staff__field-exp">Стаж: 25 лет</p>
+                                <p class="staff__field-category">Врач высшей категории</p>
+                                <p class="staff__field-title-mini">Телефон для записи:</p>
+                                <p class="staff__field-phone">8 (831) 234-45-67</p>
+                            </div>
+                            <div class="staff__field-timing">
+                                <h3 class="staff__field-timing-title">Часы работы</h3>
+                                <div class="staff__field-timing-grid">
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">пн</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">09:00-11:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">вт</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">08:00-10:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">ср</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">13:00-15:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">чт</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">09:00-11:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">пт</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">16:00-17:30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff__field-footer">
+                    <a class="staff__field-link" href="#">Записаться на прием</a>
+                    <a class="staff__field-link" href="#">Написать сообщение</a>
+                </div>
+            </div>
+
+            <div class="staff__field">
+                <div class="staff__field-main">
+                    <div class="staff__field-item">
+                        <img class="staff__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+                        <div class="staff__field-rating">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                            <img class="staff__field-star" src="./../../../assets/pics/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="staff__field-item">
+                        <h5 class="staff__field-prof">Гастроэнтеролог</h5>
+                        <h2 class="staff__field-name">Кадохова Вера Валерьевна</h2>
+                        <div class="staff__field-wrapper">
+                            <div class="staff__field-info">
+                                <p class="staff__field-exp">Стаж 28 лет</p>
+                                <p class="staff__field-category">Врач высшей категории</p>
+                                <p class="staff__field-title-mini">Телефон для записи:</p>
+                                <p class="staff__field-phone">8 (763) 215-21-60</p>
+                            </div>
+                            <div class="staff__field-timing">
+                                <h3 class="staff__field-timing-title">Часы работы</h3>
+                                <div class="staff__field-timing-grid">
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">пн</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">09:00-11:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">вт</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">08:00-10:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">ср</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">13:00-15:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">чт</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">09:00-11:30</p>
+                                    </div>
+                                    <div class="staff__field-day">
+                                        <p class="staff__field-text">пт</p>
+                                    </div>
+                                    <div class="staff__field-time">
+                                        <p class="staff__field-text">16:00-17:30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff__field-footer">
+                    <a class="staff__field-link" href="#">Записаться на прием</a>
+                    <a class="staff__field-link" href="#">Написать сообщение</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

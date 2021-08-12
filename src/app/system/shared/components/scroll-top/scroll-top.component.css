@@ -1,0 +1,16 @@
+.btn__up-link {
+    position: fixed;
+    display: block;
+    height: 72px;
+    width: 72px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}

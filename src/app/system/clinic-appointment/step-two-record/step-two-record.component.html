@@ -1,0 +1,47 @@
+<div class="steptwo__wrapper">
+    <h2 class="steptwo__title">Запись на приём к врачу</h2>
+
+    <div class="steptwo-block">
+        <h3 class="steptwo__input-text">Специализация врача:</h3>
+        <input class="steptwo__input" type="text">
+        <!-- <p-autoComplete class="steptwo__input" [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete> -->
+
+        <h3 class="steptwo__input-text">Ф.И.О.:</h3>
+        <input class="steptwo__input" type="text">
+        <!-- <p-autoComplete class="steptwo__input" [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete> -->
+
+        <h3 class="steptwo__main-title">Выберите дату прихода:</h3>
+        <!-- календарь -->
+        <p-calendar [firstDayOfWeek]="1" [(ngModel)]="value"></p-calendar>
+        <!--  -->
+
+        <div class="steptwo__time">
+            <h4 class="steptwo__time-title">Выберете время:</h4>
+
+            <div class="steptwo__timelist">
+                <a class="steptwo__timelist-item" href="#">08:30</a>
+                <a class="steptwo__timelist-item" href="#">08:45</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">08:30</a>
+                <a class="steptwo__timelist-item" href="#">08:45</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">08:30</a>
+                <a class="steptwo__timelist-item" href="#">08:45</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">08:30</a>
+                <a class="steptwo__timelist-item" href="#">08:45</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+                <a class="steptwo__timelist-item" href="#">09:00</a>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <a class="steptwo__btn" href="#">Готово</a>
+    </div>
+</div>

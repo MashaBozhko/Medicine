@@ -1,0 +1,49 @@
+.footer {
+    background: #D7F2F3;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #13757A;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+}
+
+.footer__container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+}
+
+.footer__list {
+    margin: 0 55px;
+}
+
+.footer__list:nth-child(1) {
+    margin-left: 0;
+}
+
+.footer__list:nth-child(4) {
+    margin-right: 0;
+}
+
+.footer__list-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer__list-item {
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,139 @@
+<div class="main__info">
+    <div class="container">
+        <div class="clinics__wrapper">
+            <!-- <div class="clinics__search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <img class="form__search-img" src="./../../../assets/pics/search.svg" alt="">
+                    </button>
+                </form>
+            </div> -->
+
+            <!-- dropdown -->
+
+            <p-dataView #dv [value]="clinics_array" [paginator]="true" [rows]="10" [loading]="loading" filterBy="name" [sortField]="sortField" [sortOrder]="sortOrder">
+                <!-- clinics field -->
+
+                <ng-template pTemplate="header">
+                    <div>
+                        <span class="p-input-icon-left p-mb-2 p-mb-md-0">
+                            <i class="pi pi-search"></i>
+                            <input type="search" pInputText placeholder="Поиск" (input)="dv.filter($event.target.value)">
+                        </span>
+                        <p-dropdown [options]="clinic_types" [(ngModel)]="selectedClinicType" placeholder="Выберите тип клиники:" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                        <p-dropdown [options]="clinic_districts" [(ngModel)]="selectedDistrict" placeholder="Выберите район:" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                        <p-dropdown [options]="clinic_types" [(ngModel)]="selectedClinicType" placeholder="Выберите медицинскую услугу:" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                        <div class="clinics__header-btn">
+                            <button class="clinics__header-button">Поиск</button>
+                        </div>
+
+                    </div>
+                </ng-template>
+
+                <ng-template let-clinic pTemplate="listItem">
+                    <div class="clinics__field">
+                        <div class="clinics__field-main">
+                            <div class="clinics__field-item">
+                                <div class="clinics__field-avatar-link">
+                                    <img class="clinics__field-avatar" src="./../../../assets/pics/clinic.png" alt="">
+                                    <a class="clinics__field-btn" (click)="goToClinic(clinic.id)">Подписаться</a>
+                                </div>
+                            </div>
+                            <div class="clinics__field-item">
+                                <h2 (click)="goToClinic(clinic.id)" class="clinics__field-title">{{clinic.name}}</h2>
+                                <div class="clinics__field-wrapper">
+                                    <div class="clinics__field-info">
+                                        <p class="clinics__field-text">
+                                            <span class="clinics__field-title-mini">Адрес: </span> {{clinic.placement.index}}, {{clinic.placement.city.name}}, {{clinic.placement.street}} {{clinic.placement.home}};
+                                        </p>
+                                        <p class="clinics__field-text">
+                                            <span class="clinics__field-title-mini">Регистратура: </span> {{clinic.clinic_contacts.main_phone}}
+                                        </p>
+
+                                        <p class="clinics__field-text">
+                                            <span class="clinics__field-title-mini">E-mail: </span> {{clinic.email}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngIf="clinic.work_schedule" class="doctor__field-timing">
+                                <h3 class="doctor__field-timing-title">Часы работы</h3>
+                                <div class="doctor__field-timing-grid">
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">пн</p>
+                                    </div>
+                                    <div *ngIf="clinic.work_schedule.work_time[6]" class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[6].time_start}}-{{clinic.work_schedule.work_time[6].time_end}}
+                                        </p>
+                                    </div>
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">вт</p>
+                                    </div>
+                                    <div class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[5].time_start}}-{{clinic.work_schedule.work_time[5].time_end}}
+                                        </p>
+                                    </div>
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">ср</p>
+                                    </div>
+                                    <div class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[4].time_start}}-{{clinic.work_schedule.work_time[4].time_end}}
+                                        </p>
+                                    </div>
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">чт</p>
+                                    </div>
+                                    <div class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[3].time_start}}-{{clinic.work_schedule.work_time[3].time_end}}
+                                        </p>
+                                    </div>
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">пт</p>
+                                    </div>
+                                    <div class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[2].time_start}}-{{clinic.work_schedule.work_time[2].time_end}}
+                                        </p>
+                                    </div>
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">сб</p>
+                                    </div>
+                                    <div class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[1].time_start}}-{{clinic.work_schedule.work_time[1].time_end}}
+                                        </p>
+                                    </div>
+                                    <div class="doctor__field-day">
+                                        <p class="doctor__field-text">вс</p>
+                                    </div>
+                                    <div class="doctor__field-time">
+                                        <p class="doctor__field-text">
+                                            {{clinic.work_schedule.work_time[0].time_start}}-{{clinic.work_schedule.work_time[0].time_end}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clinics__field-footer">
+                            <a class="clinics__field-link" href="#">Записаться на прием</a>
+                            <a class="clinics__field-link" href="#">Вызвать врача на дом</a>
+                            <a class="clinics__field-link" href="#">Запись на вакцинацию</a>
+                        </div>
+                    </div>
+
+                </ng-template>
+
+            </p-dataView>
+        </div>
+
+    </div>
+
+</div>

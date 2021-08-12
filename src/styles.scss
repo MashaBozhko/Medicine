@@ -1,0 +1,472 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0
+}
+
+ul[class] {
+    list-style: none
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit !important;
+}
+
+a,
+a:hover {
+    display: block;
+    text-decoration: none;
+    color: inherit !important;
+    outline: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    max-width: 1626px;
+    margin: 0 auto;
+    padding: 49px;
+}
+
+.main__info {
+    width: 100%;
+    padding-top: 202px;
+    background: #ffffff;
+    min-height: 60.5%;
+}
+
+// header menu
+.header-search__clinic .p-dropdown {
+    background: transparent;
+    border: none;
+     :active {
+        border: none;
+    }
+}
+
+.header-search__clinic .p-dropdown .p-dropdown-trigger {
+    background: transparent;
+    color: #fff;
+}
+
+.header-search__clinic .p-dropdown .p-dropdown-label.p-placeholder {
+    color: #ffffff !important;
+    font-size: 20px;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: underline;
+}
+
+// clinics
+.p-dataview .p-dataview-header {
+    background: none !important;
+    border: none !important;
+    margin-bottom: 45px;
+    border-width: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.p-dataview .p-dataview-header .ng-star-inserted {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    & span.p-input-icon-left {
+        width: 100%;
+        margin-bottom: 30px !important;
+        &>i:first-of-type {
+            left: auto;
+            right: 10px;
+            color: #FFFFFF !important;
+        }
+        & .p-inputtext {
+            width: 100%;
+            height: 51px;
+            background: #199096;
+            border-radius: 10px;
+            font-family: Noto Sans;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF !important;
+            padding: 10px 60px 10px 15px;
+            &::placeholder {
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    & .p-dropdown {
+        background: #3CB3BB !important;
+        border-radius: 10px !important;
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        line-height: 33px !important;
+        color: #FFFFFF !important;
+        padding: 10px !important;
+        margin-bottom: 33px !important;
+        width: 242px !important;
+    }
+}
+
+.p-input-icon-left>i,
+.p-input-icon-right>i {
+    top: 35% !important;
+    margin-right: 10px !important;
+}
+
+.pi-search::before {
+    display: block !important;
+    font-size: 30px !important;
+}
+
+.p-dropdown .p-dropdown-label,
+.p-dropdown .p-dropdown-trigger {
+    color: #FFFFFF !important;
+    justify-content: start;
+    padding-right: 0 !important;
+}
+
+.p-dropdown .p-dropdown-trigger span {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.p-dropdown .p-dropdown-clear-icon {
+    width: auto !important;
+    right: auto !important;
+    color: #FFFFFF !important;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.p-dropdown-items-wrapper {
+    width: 100% !important;
+}
+
+.p-orderlist .p-orderlist-list-container .p-orderlist-filter-container {
+    border: none;
+}
+
+.p-orderlist .p-orderlist-list {
+    border: none !important;
+}
+
+.p-orderlist .p-orderlist-list .p-orderlist-item {
+    cursor: unset;
+    margin-bottom: 45px !important;
+    border-radius: 10px;
+    background: rgba(166, 226, 229, 0.45) !important;
+    padding: 25px 42px !important;
+}
+
+// main.answers
+.answers__wrapper .p-accordion p-accordiontab .p-accordion-content {
+    background: #FFFFFF !important;
+    border-radius: 0 0 15px 15px !important;
+    margin-top: -10px !important;
+    padding: 22px 32px;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000 !important;
+}
+
+.answers__wrapper .p-accordion-header-text {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF !important;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link,
+.p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link,
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+    display: flex;
+    box-shadow: none !important;
+}
+
+.answers__p-button .p-button {
+    width: 335px;
+    height: 79px;
+    background: #3CB5BB !important;
+    border-radius: 10px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    font-size: 40px !important;
+    line-height: 54px !important;
+    color: #FDFDFD !important;
+    padding: 11px;
+    border: 1px solid #3CB5BB !important;
+}
+
+.p-dialog {
+    border-radius: 15px !important;
+    width: 1350px !important;
+    height: 100% !important;
+    font-family: Noto Sans !important;
+}
+
+.p-dialog .p-dialog-header {
+    background: #13757A !important;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+    color: #FFFFFF !important;
+    padding: 30px 80px 0 106px !important;
+}
+
+.p-dialog .p-dialog-content {
+    background: #13757A !important;
+    color: #FFFFFF !important;
+    padding: 0 80px 0 106px !important;
+    height: 100% !important;
+}
+
+.p-dialog .p-dialog-footer {
+    background: #13757A !important;
+    color: #FFFFFF !important;
+    padding: 15px 15px 15px 106px !important;
+    text-align: right;
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-title {
+    font-weight: 700 !important;
+    font-size: 48px !important;
+    line-height: 65px !important;
+    color: #FFFFFF;
+    margin-bottom: 43px;
+}
+
+// examination
+.p-accordion {
+    font-family: Noto Sans;
+}
+
+.p-accordion p-accordiontab .p-accordion-tab {
+    margin-bottom: 40px !important;
+}
+
+.p-accordion p-accordiontab .p-accordion-header {
+    width: 100%;
+    height: 63px;
+}
+
+.p-accordion p-accordiontab .p-accordion-header .p-accordion-header-link,
+.p-accordion p-accordiontab .p-accordion-header .p-accordion-header-link:hover {
+    height: 63px;
+    background: #3CB3BB !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+}
+
+.p-accordion p-accordiontab .p-accordion-content {
+    background: #D7F2F3 !important;
+    border-radius: 0 0 15px 15px !important;
+    margin-top: -10px !important;
+    padding: 32px 28px;
+}
+
+.p-accordion-header-text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.examination__list-item .p-accordion-header-text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+// clinic-appointment. step-one searchs
+.p-autocomplete {
+    display: block;
+    width: 100%;
+    margin-bottom: 39px;
+    height: 44px;
+    background: #FFFFFF !important;
+    border: 2px solid #3CB3BB;
+    border-radius: 10px;
+    color: #383636 !important;
+}
+
+.p-autocomplete-dd .p-autocomplete-input {
+    border: none !important;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.p-inputtext:enabled:focus {
+    box-shadow: none !important;
+}
+
+.p-autocomplete .p-button {
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.p-button:focus {
+    box-shadow: none !important;
+}
+
+.p-autocomplete .p-autocomplete-panel {
+    z-index: 2 !important;
+}
+
+// clinic-appointment. step-one buttons
+.p-buttonset .p-button {
+    width: 50%;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.p-buttonset .p-button:first-of-type {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.p-buttonset .p-button:last-of-type {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.p-selectbutton .p-button.p-highlight {
+    background: #3CB3BB !important;
+    border: none !important;
+    border-color: #3CB3BB !important;
+    color: #ffffff !important;
+}
+
+.p-selectbutton .p-button.p-highlight:hover {
+    background: #3CB3BB !important;
+    border: none !important;
+    border-color: transparent !important;
+    color: #ffffff;
+}
+
+.p-selectbutton .p-button {
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    color: #3CB3BB !important;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+// vaccination-form 
+.vaccination-form__list-item .p-autocomplete {
+    width: 55%;
+}
+
+// profile covid vaccination step-four
+.vaccination-form__list-item:host ::ng-deep .p-multiselect {
+    min-width: 15rem;
+}
+
+.vaccination-form__list-item:host ::ng-deep .multiselect-custom-virtual-scroll .p-multiselect {
+    min-width: 20rem;
+}
+
+.vaccination-form__list-item:host ::ng-deep .multiselect-custom {
+    .p-multiselect-label {
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }
+    .country-item-value {
+        padding: .25rem .5rem;
+        border-radius: 3px;
+        display: inline-flex;
+        margin-right: .5rem;
+        background-color: var(--primary-color);
+        color: var(--primary-color-text);
+        img.flag {
+            width: 17px;
+        }
+    }
+    .country-placeholder {
+        padding: 0.25rem;
+    }
+}
+
+.vaccination-form__list-item .p-multiselect {
+    min-width: 335px;
+    background: #FFFFFF;
+    border: 2px solid #3CB3BB;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383636 !important;
+    font-family: Noto Sans;
+    max-width: 850px;
+    & .p-multiselect .p-multiselect-panel {
+        min-width: 100%;
+        z-index: 1 !important;
+    }
+    & .p-multiselect-filter-icon {
+        top: 35%;
+    }
+}

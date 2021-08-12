@@ -1,0 +1,95 @@
+.steptwo__wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.steptwo__title {
+    width: 605px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94;
+    padding: 0 71px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.steptwo-block {
+    background: #D7F2F3;
+    border-radius: 15px;
+    padding: 60px;
+    font-family: Noto Sans;
+}
+
+.steptwo__input-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin-bottom: 17px;
+}
+
+.steptwo__input {
+    width: 467px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 2px solid #3CB3BB;
+    border-radius: 10px;
+    margin-bottom: 39px;
+}
+
+.steptwo__main-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin-bottom: 16px;
+}
+
+.steptwo__time-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+    margin-bottom: 23px;
+    margin-top: 26px;
+}
+
+.steptwo__timelist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.steptwo__timelist-item {
+    width: 80px;
+    height: 48px;
+    background: #15A2A9;
+    border-radius: 10px;
+    padding: 14px 17px;
+    margin: 0 26px 10px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF !important;
+}
+
+.steptwo__btn {
+    width: 166px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #3CB3BB;
+    border-radius: 15px;
+    padding: 3px 33px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #3CB3BB !important;
+    margin: 0 auto;
+}

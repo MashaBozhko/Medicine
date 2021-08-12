@@ -1,0 +1,148 @@
+<div class="main__info">
+
+    <div class="container">
+        <div class="doctor">
+
+            <p-dataView #dv [value]="doctors" [paginator]="true" [rows]="10" [loading]="loading" filterBy="last_name" [sortField]="sortField" [sortOrder]="sortOrder">
+                <!-- clinics field -->
+
+                <ng-template pTemplate="header">
+                    <div>
+                        <span class="p-input-icon-left p-mb-2 p-mb-md-0">
+                            <i class="pi pi-search"></i>
+                            <input type="search" pInputText placeholder="Поиск" (input)="dv.filter($event.target.value)">
+                        </span>
+                        <p-dropdown [options]="clinic_types" [(ngModel)]="selectedClinicType" placeholder="Болезнь:" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                        <p-dropdown [options]="clinic_districts" [(ngModel)]="selectedDistrict" placeholder="Специализация:" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                        <p-dropdown [options]="clinic_types" [(ngModel)]="selectedClinicType" placeholder="Дата приёма:" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                        <div class="clinics__header-btn">
+                            <button class="clinics__header-button">Поиск</button>
+                        </div>
+
+                    </div>
+                </ng-template>
+
+                <ng-template let-doctor pTemplate="listItem">
+                    <!-- doctor field -->
+                    <div class="doctor__field">
+                        <div class="doctor__field-main">
+                            <div class="doctor__field-item">
+                                <a (click)="goToDoctor(doctor.id)">
+                                    <img class="doctor__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+                                </a>
+
+                                <div class="doctor__field-rating">
+                                    <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+                                    <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+                                    <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+                                    <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+                                    <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="doctor__field-item">
+                                <h5 class="doctor__field-prof">Специальности:  - </h5>
+                                <h2 (click)="goToDoctor(doctor.id)" class="doctor__field-name">{{doctor.last_name}} {{doctor.first_name}} {{doctor.patronymic}}</h2>
+                                <div class="doctor__field-wrapper">
+                                    <div class="doctor__field-info">
+                                        <p class="doctor__field-exp">Стаж: {{doctor.work_experience}} лет</p>
+                                        <p class="doctor__field-category">Врач высшей категории</p>
+                                        <p class="doctor__field-title-mini">Телефон для записи:</p>
+                                        <p class="doctor__field-phone">{{doctor.work_phone}}</p>
+                                    </div>
+                                    <div class="doctor__field-timing">
+                                        <h3 class="doctor__field-timing-title">Часы работы</h3>
+                                        <div class="doctor__field-timing-grid">
+
+                                            <div *ngIf="doctor.work_schedule.work_time[6].time_start !== '00:00'"
+                                             class="doctor__field-day">
+                                                <p class="doctor__field-text">пн</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[6].time_start !== '00:00'"
+                                             class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[6].time_start}}-{{doctor.work_schedule.work_time[6].time_end}}
+                                                </p>
+                                            </div>
+
+                                            
+                                            <div *ngIf="doctor.work_schedule.work_time[5].time_start !== '00:00'"
+                                             class="doctor__field-day">
+                                                <p class="doctor__field-text">вт</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[5].time_start !== '00:00'"
+                                            class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[5].time_start}}-{{doctor.work_schedule.work_time[5].time_end}}
+                                                </p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[4].time_start !== '00:00'"
+                                             class="doctor__field-day">
+                                                <p class="doctor__field-text">ср</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[4].time_start !== '00:00'"
+                                            class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[4].time_start}}-{{doctor.work_schedule.work_time[4].time_end}}
+                                                </p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[3].time_start !== '00:00'"
+                                             class="doctor__field-day">
+                                                <p class="doctor__field-text">чт</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[3].time_start !== '00:00'"
+                                             class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[3].time_start}}-{{doctor.work_schedule.work_time[3].time_end}}
+                                                </p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[2].time_start !== '00:00'"
+                                             class="doctor__field-day">
+                                                <p class="doctor__field-text">пт</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[2].time_start !== '00:00'"
+                                            class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[2].time_start}}-{{doctor.work_schedule.work_time[2].time_end}}
+                                                </p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[1].time_start !== '00:00'"
+                                            class="doctor__field-day">
+                                                <p class="doctor__field-text">сб</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[1].time_start !== '00:00'"
+                                             class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[1].time_start}}-{{doctor.work_schedule.work_time[1].time_end}}
+                                                </p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[0].time_start !== '00:00'"
+                                             class="doctor__field-day">
+                                                <p class="doctor__field-text">вс</p>
+                                            </div>
+                                            <div *ngIf="doctor.work_schedule.work_time[0].time_start !== '00:00'"
+                                             class="doctor__field-time">
+                                                <p class="doctor__field-text">
+                                                    {{doctor.work_schedule.work_time[0].time_start}}-{{doctor.work_schedule.work_time[0].time_end}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor__field-footer">
+                            <a class="doctor__field-link" href="#">Записаться на прием</a>
+                            <a class="doctor__field-link" href="#">Написать сообщение</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-dataView>
+        </div>
+
+
+    </div>
+
+</div>

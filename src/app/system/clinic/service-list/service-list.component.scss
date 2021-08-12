@@ -1,0 +1,47 @@
+.clinic__wrapper {
+    width: 1150px;
+}
+
+.clinic-title {
+    height: 49px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94 !important;
+    margin-bottom: 31px;
+}
+
+.service__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service__list-link {
+    width: 349px;
+    height: 274px;
+    margin: 0 30px 40px 0;
+    position: relative;
+}
+
+.service__list-img {
+    width: 100%;
+}
+
+.service__list-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 17px 40px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(60, 179, 187, 0.81);
+    width: 100%;
+}

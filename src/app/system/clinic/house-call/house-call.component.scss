@@ -1,0 +1,158 @@
+.clinic__wrapper {
+    width: 90%;
+    font-family: Noto Sans;
+}
+
+.clinic-title {
+    height: 49px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94 !important;
+    margin-bottom: 33px;
+    width: 500px;
+}
+
+.info__attachment {
+    background: #D7F2F3;
+    border: 1px solid #13757A;
+    border-radius: 15px;
+    width: 100%;
+    padding: 28px 45px;
+    margin-bottom: 23px;
+}
+
+.info__attachment-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000 !important;
+}
+
+.info__attachment-link {
+    text-decoration-line: underline;
+    color: #13757A !important;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.attachment-link {
+    margin: 0 auto 45px;
+    display: block;
+    background: #FFFFFF;
+    border: 2px solid #3CB3BB;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #3CB3BB !important;
+    width: 205px;
+    text-align: center;
+    padding: 9px;
+}
+
+.info__call {
+    background: #D7F2F3;
+    border: 1px solid #13757A;
+    border-radius: 15px;
+    width: 100%;
+    padding: 28px 45px;
+    margin-bottom: 45px;
+}
+
+.info__call-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000 !important;
+}
+
+.info__call-phone {
+    text-decoration-line: underline;
+    color: #13757A !important;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.info__call-bold {
+    font-weight: 700;
+    color: #13757A;
+}
+
+.house-call__form {
+    background: #D7F2F3;
+    border: 1px solid #13757A;
+    border-radius: 15px;
+    width: 100%;
+    padding: 28px 45px;
+    margin-bottom: 23px;
+}
+
+.house-call__form-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin-bottom: 16px;
+}
+
+.house-call__form-input {
+    height: 44px;
+    background: #FFFFFF;
+    border: 2px solid #3CB3BB;
+    border-radius: 10px;
+    width: 100%;
+    padding: 7px 10px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 35px;
+    color: #383636 !important;
+    &::placeholder {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 31px;
+        color: #383636 !important;
+    }
+    &:last-child {
+        margin-bottom: 28px;
+    }
+}
+
+.house-call__form-agreement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.house-call__form-agreement-input {
+    margin-right: 8px;
+}
+
+.house-call__form-agreement-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #383636;
+}
+
+.house-call__form-btn {
+    width: 139px;
+    background: #FFFFFF;
+    border: 2px solid #3CB5BB;
+    border-radius: 15px;
+    padding: 9px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #3CB5BB !important;
+    display: block;
+}

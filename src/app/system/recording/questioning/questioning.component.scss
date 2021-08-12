@@ -1,0 +1,68 @@
+position
+{
+  margin-left: 360px;
+  margin-top: 20px;
+}
+
+
+
+
+.text
+{
+  font-family: Roboto;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-left: 260px;
+}
+
+
+
+.btnAll
+{
+  height: 250px;
+}
+.nextK
+{
+  display: inline-block;
+  margin: 5% 16% 0 16%; //top right bottom left
+}
+.next
+{
+  cursor: pointer;
+  text-decoration:none;
+  border-radius: 15px;
+  width:150px;
+  height: 51px;
+  border: none;
+  justify-content: center;
+  transition: all .8s;
+  text-align: center;
+  background: linear-gradient(90deg, #5C50EC 0%, #BB3B3B 100%);
+  font-family: Roboto;
+  color: white;
+  font-size: 25px;
+  margin-top: 50px;
+  padding-top: 8px;
+}
+
+.btn
+{
+  cursor: pointer;
+  border-radius: 15px;
+  width:450px;
+  height:60px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  background: linear-gradient(90deg, #8080E6 0%, #CBCBE8 100%);
+  font-family: Roboto;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 25%;
+}
+
+
+

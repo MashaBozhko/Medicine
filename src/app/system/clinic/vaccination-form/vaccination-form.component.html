@@ -1,0 +1,101 @@
+<div class="clinic">
+
+    <div class="clinic__wrapper">
+        <h1 class="clinic-title">Вакцинация</h1>
+
+        <p-accordion [multiple]="true">
+            <p-accordionTab class="vaccination-form__list-item" header="Информация о вакцинации">
+                <a class="vaccination-form__list-link" href="#">
+                    Памятка пациента о проведении вакцинации против COVID-19 вакциной «Гам-Ковид-Вак»
+                </a>
+                <a class="vaccination-form__list-link" href="#">
+                    Ответы на часто задаваемые вопросы по новой коронавирусной инфекции
+                </a>
+                <a class="vaccination-form__list-link" href="#">
+                    Вакцинация от Covid-19. Ответы на часто задаваемые вопросы
+                </a>
+            </p-accordionTab>
+
+            <p-accordionTab class="vaccination-form__list-item" header="Анкетирование">
+                <p class="vaccination-form__list-text">
+                    Для Вашего удобства и сокращения времени пребывания в поликлинике при прохождении вакцинации Вы можете заранее скачать бланк анкеты и согласия, распечатать, заполнить и принести с собой в день обращения:
+                </p>
+
+                <a class="vaccination-form__list-download-link" href="">
+                    Анкета пациента
+                </a>
+                <a class="vaccination-form__list-download-link" href="">
+                    Добровольное информированное согласие
+                </a>
+
+                <hr>
+
+                <p class="vaccination-form__list-text">
+                    Так же, Вы можете заполнить анкету онлайн:
+                </p>
+
+                <a class="vaccination-form__list-btn" href="#">Анкета</a>
+            </p-accordionTab>
+
+            <p-accordionTab class="vaccination-form__list-item" header="Запись на вакцинацию">
+
+                <h3 class="vaccination-form__list-title">Название вакцины*:</h3>
+                <p-autoComplete [(ngModel)]="selectedVaccinationAdvanced" [suggestions]="filteredVaccinations" (completeMethod)="filterVaccination($event)" field="name" [dropdown]="true">
+                    <ng-template let-vaccination pTemplate="item">
+                        <div class="country-item">
+                            <div>{{vaccination.name}}</div>
+                        </div>
+                    </ng-template>
+                </p-autoComplete>
+
+                <h3 class="vaccination-form__list-title">Пункт вакцинации*:</h3>
+                <p-autoComplete [(ngModel)]="selectedVaccinationPointAdvanced" [suggestions]="filteredVaccinationPoints" (completeMethod)="filterVaccinationPoint($event)" field="name" [dropdown]="true">
+                    <ng-template let-vaccinationpoint pTemplate="item">
+                        <div class="country-item">
+                            <div>{{vaccinationpoint.name}}</div>
+                        </div>
+                    </ng-template>
+                </p-autoComplete>
+
+                <div class="vaccination-form__list-title">
+                    <span>Прекрепить анкету:</span>
+                    <input type="file" name="worksheet" id="">
+                </div>
+
+                <div class="vaccination-form__list-title">
+                    <span>Прекрепить согласие:</span>
+                    <input type="file" name="agreement" id="">
+                </div>
+
+                <h3 class="vaccination-form__list-title">Выберите дату прихода:</h3>
+                <p-calendar [firstDayOfWeek]="1" [(ngModel)]="value"></p-calendar>
+
+                <div class="vaccination-form__time">
+                    <h4 class="vaccination-form__list-title">Выберите временной диапазон визита:</h4>
+
+                    <div class="vaccination-form__timelist">
+                        <a class="vaccination-form__timelist-item" href="#">08:30</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:45</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:30</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:45</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:30</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:45</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:30</a>
+                        <a class="vaccination-form__timelist-item" href="#">08:45</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                        <a class="vaccination-form__timelist-item" href="#">09:00</a>
+                    </div>
+                </div>
+            </p-accordionTab>
+
+        </p-accordion>
+    </div>
+</div>

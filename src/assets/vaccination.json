@@ -1,0 +1,8 @@
+{
+    "data": [
+        { "name": "Спутник V", "code": "sputnik-V" },
+        { "name": "ЭпиВакКорона", "code": "EpiVakKorona" },
+        { "name": "КовиВак", "code": "KoviVak" },
+        { "name": "Спутник Лайт", "code": "sputnik-lite" }
+    ]
+}

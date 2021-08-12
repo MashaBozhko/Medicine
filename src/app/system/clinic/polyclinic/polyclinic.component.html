@@ -1,0 +1,140 @@
+<div class="clinic">
+
+    <div class="clinic__wrapper">
+        <div class="polyclinic__hello">
+            <img class="polyclinic__hello-img" src="../../../../assets/pics/clinic.png" alt="">
+            <div class="polyclinic__hello-info">
+                <h2 class="polyclinic__hello-title">{{clinic.name}}</h2>
+                <p class="polyclinic__hello-text">
+                    По вопросам качества оказания медицинской помощи в поликлинике Вы можете обратиться по телефону «Горячей линии» тел.
+                    <span class="polyclinic__hello-phone">{{clinic.clinic_contacts.hotline_phone}}</span>
+                </p>
+            </div>
+            <div class="polyclinic__hello-item">
+                <a class="polyclinic__hello-link" [routerLink]="['', 'clinic', 'vaccination-form']" routerLinkActive="active">Вакцинация</a>
+                <a class="polyclinic__hello-link" href="#">Запись</a>
+                <a class="polyclinic__hello-link" [routerLink]="['', 'clinic', 'house-call']" routerLinkActive="active">Вызов врача на дом</a>
+            </div>
+        </div>
+
+        <div class="polyclinic__statistic">
+            <div class="polyclinic__statistic-list">
+                <h3 class="polyclinic__statistic-item">
+                    <span class="polyclinic__statistic-title">34,6</span> тыс.
+                    <br> ПАЦИЕНТОВ
+                </h3>
+                <a class="polyclinic__statictic-link" href="#">Прикрепиться</a>
+            </div>
+            <div class="polyclinic__statistic-list">
+                <h3 class="polyclinic__statistic-item">
+                    <span class="polyclinic__statistic-title">32</span>
+                    <br> СОТРУДНИКОВ
+                </h3>
+                <a class="polyclinic__statictic-link" href="#">Вакансии</a>
+            </div>
+            <div class="polyclinic__statistic-list">
+                <h3 class="polyclinic__statistic-item">
+                    <span class="polyclinic__statistic-title">11</span>
+                    <br> ОТЗЫВОВ
+                </h3>
+                <a class="polyclinic__statictic-link" href="#">Посмотреть</a>
+            </div>
+        </div>
+
+        <div class="polyclinic__departament">
+            <h2 class="polyclinic-title">Поликлиническое отделение</h2>
+            <h3 class="polyclinic__departament-title">
+                Диагностика и лечение пациентов с заболеваниями:
+            </h3>
+            <ul class="polyclinic__departament-list">
+                <li *ngFor="let spec of clinic_specializatiions" class="polyclinic__departament-item">
+                    <a class="polyclinic__departament-link" href="#">
+                        <img class="polyclinic__departement-img" src="{{spec.img_url}}" alt="">
+                        <span class="polyclinic__departement-text">{{spec.description}}</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="polyclinic__driving">
+            <h2 class="polyclinic-title">Схема проезда</h2>
+            <p class="polyclinic__driving-text">
+                Автобусные маршруты: {{clinic.clinic_drive_map.bus_routes}}
+            </p>
+            <p class="polyclinic__driving-text">
+                Маршрутное такси: {{clinic.clinic_drive_map.minibus_taxi}}
+            </p>
+            <p class="polyclinic__driving-text">
+                Троллейбусные маршруты: {{clinic.clinic_drive_map.trolleybus_routes}}
+            </p>
+        </div>
+
+        <div class="polyclinic__address">
+            <div style="width: 613px; height: 450px;" id="map"></div>
+            <div class="polyclinic__address-item">
+                <div class="polyclinic__address-info">
+                    <p class="polyclinic__address-text">
+                        <span class="polyclinic__address-title">
+                                Адрес: 
+                            </span>
+                        <br> {{clinic.placement.index}}, г. {{clinic.placement.city.name}}, {{clinic.placement.street}} {{clinic.placement.home}};
+                    </p>
+                    <p class="polyclinic__address-text">
+                        <span class="polyclinic__address-title">
+                                Регистратура: 
+                            </span>
+                        <br> {{clinic.clinic_contacts.main_phone}}
+                    </p>
+                    <p class="polyclinic__address-text">
+                        <span class="polyclinic__address-title">
+                                Прием вызовов на дом:
+                            </span>
+                        <br> Ежедневно 7.00-20.00
+                    </p>
+                    <p class="polyclinic__address-text">
+                        <span class="polyclinic__address-title">
+                                E-mail: 
+                            </span>
+                        <br> {{clinic.email}}
+                    </p>
+                </div>
+                <a class="polyclinic__address-follow" href="#">Написать</a>
+            </div>
+        </div>
+
+        <div class="polyclinic__news">
+            <h2 class="polyclinic-title">Новости Поликлиники</h2>
+            <div class="polyclinic__news-list">
+                <a class="polyclinic__news-item" href="#">
+                    <img class="polyclinic__news-img" src="../../../../assets/pics/news/new1.png" alt="">
+                    <h3 class="polyclinic__news-title">
+                        С 12.07.2021 пункт вакцинации против COVID-19 по адресу ул. Гордеевская, д.7 прекращает свою работу.
+                    </h3>
+                    <p class="polyclinic__news-text">
+                        Вы можете пройти вакцинацию в пунктах вакцинации, расположенных по адресам...
+                    </p>
+                    <p class="polyclinic__news-date">
+                        12.07.2021
+                    </p>
+                </a>
+
+                <a class="polyclinic__news-item" href="#">
+                    <img class="polyclinic__news-img" src="../../../../assets/pics/news/new1.png" alt="">
+                    <h3 class="polyclinic__news-title">
+                        С 12.07.2021 пункт вакцинации против COVID-19 по адресу ул. Гордеевская, д.7 прекращает свою работу.
+                    </h3>
+                    <p class="polyclinic__news-text">
+                        Вы можете пройти вакцинацию в пунктах вакцинации, расположенных по адресам...
+                    </p>
+                    <p class="polyclinic__news-date">
+                        12.07.2021
+                    </p>
+                </a>
+
+            </div>
+            <hr>
+            <a class="polyclinic__news-all" href="#">Ко всем новостям</a>
+        </div>
+    </div>
+</div>

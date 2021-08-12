@@ -1,0 +1,503 @@
+position {
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+position_1 {
+    margin-right: 100px;
+}
+
+* {
+    font-family: Noto Sans;
+}
+
+
+/* RECORD ///////////////////////////////////////// */
+
+.diagnosis__wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.record-title {
+    width: 450px;
+    height: 49px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94;
+    text-align: center;
+    padding: 0 70px;
+    margin-bottom: 30px;
+}
+
+.record__list {
+    margin: 0 auto;
+    max-width: 1000px;
+    color: #383A4D;
+}
+
+.record__list-item {
+    max-width: 1000px;
+    max-height: 100%;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.record__list-top {
+    width: 1000px;
+    height: 100px;
+    background: #C4C4C4;
+    border-radius: 15px;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.record__list-title {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 86px;
+    color: #383A4D;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsed-img1-1,
+.collapsed-img1-2,
+.collapsed-img2-1,
+.collapsed-img2-2 {
+    width: 53px;
+    height: 53px;
+}
+
+.collapsed-img1-1,
+.collapsed-img2-1 {
+    display: block;
+}
+
+.collapsed-img1-2,
+.collapsed-img2-2 {
+    display: none;
+}
+
+.record__list-title:hover {
+    text-decoration: none;
+    color: #383A4D;
+}
+
+.record__list-link {
+    display: block;
+}
+
+.record__list-point {
+    width: 54px;
+    height: 54px;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-body {
+    width: 1000px;
+    height: 100%;
+    padding: 250px 75px 0 75px;
+}
+
+.record__main-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #383636;
+    margin-bottom: 16px;
+}
+
+.record__main-accordeon {
+    width: 725px;
+    min-height: 70px;
+    background: #C4C4C4;
+    border-radius: 15px;
+    padding: 25px !important;
+    position: relative;
+}
+
+.record__main-arrow {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 46px;
+    width: 46px;
+}
+
+.record__accordeon-item {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: 1px solid #6c757d;
+    border-radius: 15px;
+    margin-right: 66px;
+    padding: 5px 10px;
+}
+
+.record-hr {
+    width: 813px;
+    height: 0px;
+    border: 1px solid #000000;
+    filter: blur(1px);
+    margin-top: 63px;
+    margin-bottom: 0;
+}
+
+.record__accordeon-btn {
+    width: 166px;
+    height: 49px;
+    background: #3CB5BB;
+    border-radius: 15px;
+    padding: 3px 33px;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF !important;
+    text-align: center;
+    margin: 26px auto;
+}
+
+.look-calendar {
+    width: 600px;
+    padding: 6px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#calendar {
+    width: 100%;
+    line-height: 66px;
+    font-size: 35px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+#calendar tr.dn td {
+    font-size: 25px;
+    line-height: 29px;
+    padding: 5px 0;
+}
+
+#calendar thead tr:last-child {
+    font-size: 25px;
+    color: #555555;
+    line-height: 29px;
+    border-bottom: 1px solid #4D45A5;
+    border-top: 3px solid #4D45A5;
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+    color: #323232;
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+
+#calendar tbody td {
+    color: #2c567a;
+}
+
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
+    color: #e78c5c;
+}
+
+#calendar tbody td.today {
+    background: #dc0000;
+    color: #fff;
+}
+
+.progres {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 60px 40px 20px;
+}
+
+.progres-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3CB3BB;
+}
+
+.progres-img {
+    margin: 0 auto 50px;
+}
+
+
+/* DIAGNOSIS */
+
+.diagnosis__examination-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.diagnosis__analyzes,
+.diagnosis__examination {
+    margin: 110px auto;
+    width: 1257px;
+    height: 647px;
+}
+
+.diagnosis__examination-card {
+    margin: 10px auto;
+    width: 100%;
+    background: #D7F2F3;
+    border-radius: 15px;
+    padding: 65px 71px;
+}
+
+.dropdown {
+    margin-bottom: 39px;
+    height: 44px;
+}
+
+.dropdown-mini {
+    width: 467px;
+    height: 44px;
+}
+
+.dropdown-mini-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin: 39px 0 16px;
+}
+
+.diagnosis__examination-btn {
+    width: 100%;
+    height: 44px;
+    margin: 0 auto;
+    background: #3CB3BB;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff !important;
+    text-align: left;
+    padding: 4px 20px;
+    margin-bottom: 39px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diagnosis__examination-dropdown {
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636 !important;
+    border: 1px solid #545b62;
+    border-radius: 15px;
+}
+
+.diagnosis__examination-dropdown-mini {
+    width: 467px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636 !important;
+    border: 1px solid #545b62;
+    border-radius: 15px;
+}
+
+.diagnosis__examination-dropdown>.dropdown-item,
+.diagnosis__examination-dropdown-mini>.dropdown-item {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+.page {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*___________________*/
+
+.wrapper {
+    margin: 15px auto;
+    max-width: 1100px;
+}
+
+.container-calendar {
+    background: #ffffff;
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td,
+.table-calendar th {
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid #00BCD4;
+}
+
+
+/* sunday */
+
+.date-picker:nth-child(1) {
+    color: rgb(255, 0, 0);
+}
+
+
+/* friday */
+
+.date-picker:nth-child(6) {
+    color: green;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    background: #3CB3BB;
+}
+
+.diagnosis__examination-time-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+    margin-bottom: 23px;
+    margin-top: 26px;
+}
+
+.diagnosis__examination-timelist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.diagnosis__examination-timelist-item {
+    width: 80px;
+    height: 48px;
+    background: #15A2A9;
+    border-radius: 10px;
+    padding: 14px 17px;
+    margin: 0 26px 10px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF !important;
+}
+
+.analyzes__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 39px;
+    padding: 0 20px;
+}
+
+.analyzes__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    &:nth-child(2) {
+        margin: 0 10px;
+    }
+}
+
+.analyzes__list-tex {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+}

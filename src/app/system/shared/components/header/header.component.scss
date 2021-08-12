@@ -1,0 +1,136 @@
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+}
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 110px;
+    background-color: #3CB3BB;
+    height: 67px;
+}
+
+.header-search__item {
+    display: flex;
+}
+
+.header-search__input {
+    border-radius: 15px;
+    background: #FFFFFF;
+    border: 2px solid #1D8187;
+    width: 413px;
+    height: 36px;
+    margin-right: 11px;
+    padding: 5px;
+}
+
+.header-search__btn {
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #1D8187;
+    width: 132px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.header-search__city {
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.header-search__clinic {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-left: 70px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-search__clinic img {
+    margin-right: 4px;
+}
+
+.header-nav {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-color: #FFFFFF;
+    height: 135px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+    font-weight: 500;
+    color: linear-gradient(90deg, #3CB3BB 48.85%, #000000 100%);
+}
+
+.logo-img {
+    float: left;
+    margin-right: 5px;
+}
+
+#header-nav7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list-item {
+    text-align: center;
+    color: #3CB3BB;
+}
+
+.menu__list-link {
+    color: #383A4D;
+    line-height: 45px;
+}
+
+.menu__list-user {
+    margin-right: 10px;
+}
+
+.menu__list-arrow {
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+@media(max-width: 1400px) {
+    .header-search {
+        grid-template-columns: 0.05fr 0.4fr 0.1fr 1fr 1fr;
+    }
+    .header-search__input {
+        width: 313px;
+    }
+    .header-search__city {
+        justify-content: flex-end;
+    }
+    .header-search__clinic {
+        justify-content: flex-end;
+    }
+}

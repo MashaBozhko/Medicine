@@ -1,0 +1,241 @@
+.clinics__wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+    font-family: Noto Sans !important;
+}
+
+.clinics__search {
+    width: 100%;
+    height: 51px;
+    background: #E6E6E6;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.clinics__search .form-inline .form-control {
+    width: 92%;
+    height: 100%;
+    background: #E6E6E6;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.clinics__search .form-inline .btn {
+    width: 55px;
+    height: 51px;
+    border: none;
+    padding: 0 10px;
+}
+
+.clinics__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clinics-item {
+    width: 30%;
+    margin-bottom: 33px;
+}
+
+.clinics__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clinics__title-text {
+    width: 100%;
+    text-align: center;
+}
+
+.clinics__title-img {
+    margin-bottom: 20px;
+}
+
+.clinics-search-btn {
+    width: 210px;
+    height: 39px;
+    background: #3CB5BB;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF !important;
+    border: none;
+    margin: 0 auto 45px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.clinics__header-btn {
+    width: 100%;
+}
+
+.clinics__header-button {
+    margin: 0 auto;
+    width: 210px;
+    background: #3CB5BB;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF !important;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-outline-success {
+    border: none;
+}
+
+.btn-outline-success:hover {
+    background-color: transparent;
+}
+
+.clinics__field {
+    width: 100%;
+    height: 405px;
+    margin: 0 auto;
+    padding: 25px 40px;
+    background: rgba(166, 226, 229, 0.45);
+    border-radius: 10px;
+    margin-bottom: 45px;
+}
+
+.clinics__field-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.clinics__field-item {
+    height: 100%;
+}
+
+.clinics__field-item+.clinics__field-item {
+    margin-left: 50px;
+}
+
+.clinics__field-avatar-link {
+    position: relative;
+}
+
+.clinics__field-avatar {
+    width: 258px;
+    height: 291px;
+}
+
+.clinics__field-btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 12px;
+    background: rgba(60, 181, 187, 0.93);
+    border-radius: 10px;
+    width: 210px;
+    height: 39px;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF !important;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clinics__field-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+    margin-bottom: 33px;
+    cursor: pointer;
+}
+
+.clinics__field-info {
+    max-width: 650px;
+}
+
+.clinics__field-text {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383A4D;
+}
+
+.clinics__field-title-mini {
+    font-weight: 700;
+    color: rgba(56, 54, 54, 0.76);
+}
+
+.clinics__field-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clinics__field-link {
+    width: 30%;
+    height: 43px;
+    background: #3CB5BB;
+    border-radius: 10px;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF !important;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.p-orderlist .p-orderlist-list-container .p-orderlist-filter-container {
+    border: none;
+}
+
+.doctor__field-timing {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.doctor__field-timing-title {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #383636;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.doctor__field-timing-grid {
+    max-width: 160px;
+    display: grid;
+    grid-template-rows: 21px 21px 21px 21px 21px;
+    grid-template-columns: 51px 99px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.doctor__field-day,
+.doctor__field-time {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 3px 0;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}

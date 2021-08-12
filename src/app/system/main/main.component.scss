@@ -1,0 +1,1459 @@
+/* INDEX  */
+
+.main__info {
+    width: 100%;
+    padding-top: 202px;
+    background: #ffffff;
+}
+
+.top-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-info__img1 {
+    width: 645px;
+    height: 445px;
+}
+
+.top-info__img2 {
+    width: 478px;
+    height: 558px;
+}
+
+.statistic {
+    background: #8AD9DD;
+}
+
+.statistic-img {
+    margin: 23px auto;
+}
+
+.main-title {
+    background: #3CB5BB;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 75px;
+    color: #FFFFFF;
+    max-width: 1138px;
+    height: 80px;
+    left: 147px;
+    margin-bottom: 23px;
+}
+
+.statistic__graphic {
+    width: 1113px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.chart {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.functions {
+    background-color: #FFFFFF;
+}
+
+.functions__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.functions__grid-item {
+    width: 775px;
+    height: 775px;
+    background: #C4EBED;
+    border-radius: 15px;
+}
+
+.news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #D7F2F3;
+}
+
+.news .main-title {
+    width: 581px;
+    height: 80px;
+}
+
+.news__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__list-item {
+    width: 90%;
+    min-height: 426px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.news__list-item:hover {
+    width: 90%;
+    min-height: 426px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    background: #91e2ed;
+}
+
+.news__list-img {
+    width: 489px;
+    height: 289px;
+    margin-bottom: 13px;
+}
+
+.news__list-title {
+    max-width: 489px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 28px;
+    min-height: 150px;
+}
+
+.news__list-text {
+    max-width: 489px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin-bottom: 28px;
+}
+
+.news__list-date {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #9E9E9E;
+}
+
+.news hr {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #888888;
+    margin: 88px 0 38px;
+}
+
+.news__link {
+    display: block;
+    padding: 10px 0;
+    width: 406px;
+    height: 76px;
+    background: rgba(60, 181, 187, 0.72);
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: #FFF8F8 !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.instruction {
+    background: #fff;
+    padding: 38px 147px;
+}
+
+.instruction-wrapper {
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-between;
+    margin: 23px auto 0;
+    height: 400px;
+}
+
+#step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 315px;
+    min-height: 210px;
+    img {
+        width: 132px;
+        height: 132px;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+.step-line {
+    position: relative;
+}
+
+.step-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    bottom: 0;
+    height: 5px;
+    width: 160%;
+    background-color: #696D94;
+    z-index: 3;
+}
+
+.step-top {
+    margin-bottom: auto;
+}
+
+.step-bot {
+    margin-top: 5%;
+}
+
+#step-descr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.instruction-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #1A8371;
+    text-decoration: underline;
+}
+
+.instruction-text {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #35A1A8;
+}
+
+.answers .main-title {
+    width: 468px;
+    height: 80px;
+}
+
+.instruction hr {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #888888;
+    margin: 88px 0 38px;
+}
+
+.instruction__link {
+    display: block;
+    padding: 10px 0;
+    width: 424px;
+    height: 76px;
+    background: #3CB5BB;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: #FFF8F8 !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.answers {
+    background: rgba(59, 179, 187, 0.22);
+    border-radius: 10px;
+    margin-bottom: 150px;
+    transition: all .5s;
+}
+
+.answers .main-title {
+    width: 468px;
+    height: 80px;
+}
+
+.answers__wrapper {
+    width: 1350px;
+}
+
+/////////////////ШАРИК ()
+#DIV_1 {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 667.76px;
+    justify-content: center;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 224.837px 224.837px;
+    transform-origin: 224.844px 224.844px;
+    width: 702px;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_1*/
+
+#DIV_1:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_1:after*/
+
+#DIV_1:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_1:before*/
+
+#DIV_2 {
+    align-items: center;
+    border-block-end-color: rgba(164, 196, 255, 0.3);
+    border-block-end-style: solid;
+    border-block-end-width: 1px;
+    border-block-start-color: rgba(164, 196, 255, 0.3);
+    border-block-start-style: solid;
+    border-block-start-width: 1px;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-inline-end-color: rgba(164, 196, 255, 0.3);
+    border-inline-end-style: solid;
+    border-inline-end-width: 1px;
+    border-inline-start-color: rgba(164, 196, 255, 0.3);
+    border-inline-start-style: solid;
+    border-inline-start-width: 1px;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    height: 552px;
+    inset-block-end: 0px;
+    inset-block-start: 0px;
+    inset-inline-end: 0px;
+    inset-inline-start: 0px;
+    justify-content: center;
+    left: 0px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 156.413px 156.413px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    transform-origin: 156.413px 156.413px;
+    width: 542px;
+    border: 1px solid rgba(164, 196, 255, 0.3);
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_2*/
+
+#DIV_2:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_2:after*/
+
+#DIV_2:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_2:before*/
+
+#DIV_3 {
+    background-position: 50% 50%;
+    border-block-end-color: rgb(219, 233, 252);
+    border-block-end-style: solid;
+    border-block-end-width: 3.9px;
+    border-block-start-color: rgb(219, 233, 252);
+    border-block-start-style: solid;
+    border-block-start-width: 3.9px;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-inline-end-color: rgb(219, 233, 252);
+    border-inline-end-style: solid;
+    border-inline-end-width: 3.9px;
+    border-inline-start-color: rgb(219, 233, 252);
+    border-inline-start-style: solid;
+    border-inline-start-width: 3.9px;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 236px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 87.975px 87.975px;
+    transform-origin: 87.9812px 87.9812px;
+    width: 245px;
+    background: rgba(0, 0, 0, 0) url("../../../assets/pics/dnk.svg") repeat scroll 50% 50% / cover padding-box border-box;
+    border: 3.9px solid rgb(219, 233, 252);
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_3*/
+
+#DIV_3:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_3:after*/
+
+#DIV_3:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_3:before*/
+
+#DIV_4 {
+    animation: circle1 15s linear infinite;
+    align-items: center;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    // inset-block-end: 115.325px;
+    // inset-block-start: 117.312px;
+    // inset-inline-end: 115.325px;
+    // inset-inline-start: 117.312px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, -156.416, 1.91554e-14);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+}
+
+
+/*#DIV_4*/
+
+@keyframes circle1 {
+    0% {
+        transform: rotate(0deg) translate(-260px, -70px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-260px, -70px) rotate(-360deg);
+    }
+}
+
+#DIV_4:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_4:after*/
+
+#DIV_4:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_4:before*/
+
+#DIV_5,
+#DIV_9,
+#DIV_13,
+#DIV_17,
+#DIV_21,
+#DIV_25 {
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    height: 135px;
+    justify-content: center;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_5, #DIV_9, #DIV_13, #DIV_21, #DIV_25*/
+
+#DIV_5:after,
+#DIV_9:after,
+#DIV_13:after,
+#DIV_17:after,
+#DIV_21:after,
+#DIV_25:after,
+#DIV_29:after {
+    cursor: pointer;
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_5:after, #DIV_9:after, #DIV_13:after, #DIV_21:after, #DIV_25:after*/
+
+#DIV_5:before,
+#DIV_9:before,
+#DIV_13:before,
+#DIV_17:after,
+#DIV_21:before,
+#DIV_25:before {
+    cursor: pointer;
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_5:before, #DIV_9:before, #DIV_13:before, #DIV_21:before, #DIV_25:before*/
+
+#DIV_6,
+#DIV_10,
+#DIV_14,
+#DIV_18,
+#DIV_22,
+#DIV_26,
+#DIV_30 {
+    block-size: 12px;
+    border-block-end-color: rgb(100, 100, 100);
+    border-block-start-color: rgb(100, 100, 100);
+    border-inline-end-color: rgb(100, 100, 100);
+    border-inline-start-color: rgb(100, 100, 100);
+    bottom: 76.2px;
+    box-sizing: border-box;
+    caret-color: rgb(100, 100, 100);
+    color: rgb(36, 36, 36);
+    column-rule-color: rgb(100, 100, 100);
+    cursor: pointer;
+    height: 12px;
+    inline-size: 78.2px;
+    // inset-block-end: 66.2px;
+    // inset-block-start: 0px;
+    // inset-inline-end: 0px;
+    // inset-inline-start: 0px;
+    left: -5px;
+    // perspective-origin: 39.1px 16px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none solid rgb(100, 100, 100);
+    top: -50px;
+    // transform-origin: 39.1px 6px;
+    white-space: nowrap;
+    width: 78.2px;
+    border: 0px none rgb(100, 100, 100);
+    font: 17px "Proxima Nova", sans-serif;
+    outline: rgb(100, 100, 100) none 0px;
+    transition: top 0.5s ease 0s;
+}
+
+
+/*#DIV_6, #DIV_10, #DIV_14, #DIV_22, #DIV_26*/
+
+#DIV_6:after,
+#DIV_10:after,
+#DIV_14:after,
+#DIV_18::after,
+#DIV_22:after,
+#DIV_26:after {
+    border-block-end-color: rgb(100, 100, 100);
+    border-block-start-color: rgb(100, 100, 100);
+    border-inline-end-color: rgb(100, 100, 100);
+    border-inline-start-color: rgb(100, 100, 100);
+    caret-color: rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+    column-rule-color: rgb(100, 100, 100);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none solid rgb(100, 100, 100);
+    white-space: nowrap;
+    border: 0px none rgb(100, 100, 100);
+    font: 9.776px "Proxima Nova", sans-serif;
+    outline: rgb(100, 100, 100) none 0px;
+}
+
+
+/*#DIV_6:after, #DIV_10:after, #DIV_14:after, #DIV_22:after, #DIV_26:after*/
+
+#DIV_6:before,
+#DIV_10:before,
+#DIV_14:before,
+#DIV_18:before,
+#DIV_22:before,
+#DIV_26:before {
+    border-block-end-color: rgb(100, 100, 100);
+    border-block-start-color: rgb(100, 100, 100);
+    border-inline-end-color: rgb(100, 100, 100);
+    border-inline-start-color: rgb(100, 100, 100);
+    caret-color: rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+    column-rule-color: rgb(100, 100, 100);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none solid rgb(100, 100, 100);
+    white-space: nowrap;
+    border: 0px none rgb(100, 100, 100);
+    font: 9.776px "Proxima Nova", sans-serif;
+    outline: rgb(100, 100, 100) none 0px;
+}
+
+
+/*#DIV_6:before, #DIV_10:before, #DIV_14:before, #DIV_22:before, #DIV_26:before*/
+
+#DIV_7 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/health-diary.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_7*/
+
+#DIV_7:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_7:after*/
+
+#DIV_7:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_7:before*/
+
+#DIV_8 {
+    animation: circle3 15s linear infinite;
+    align-items: center;
+    block-size: 78.2px;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    // inset-block-end: 115.325px;
+    // inset-block-start: 117.312px;
+    // inset-inline-end: 115.325px;
+    // inset-inline-start: 117.312px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, -78.208, 135.46);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+}
+
+
+/*#DIV_8*/
+
+@keyframes circle3 {
+    0% {
+        transform: rotate(0deg) translate(-230px, 160px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-230px, 160px) rotate(-360deg);
+        // transform: rotate(360deg) translate(-240px, 150px) rotate(-360deg);
+    }
+}
+
+#DIV_8:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_8:after*/
+
+#DIV_8:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_8:before*/
+
+#DIV_11 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/recipe.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_11*/
+
+#DIV_11:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_11:after*/
+
+#DIV_11:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_11:before*/
+
+#DIV_12 {
+    align-items: center;
+    block-size: 78.2px;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    // inset-block-end: 115.325px;
+    // inset-block-start: 117.312px;
+    // inset-inline-end: 115.325px;
+    // inset-inline-start: 117.312px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, 78.208, 135.46);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+    animation: circle4 15s linear infinite;
+}
+
+
+/*#DIV_12*/
+
+@keyframes circle4 {
+    0% {
+        transform: rotate(0deg) translate(280px, -50px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(280px, -50px) rotate(-360deg);
+    }
+}
+
+#DIV_12:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_12:after*/
+
+#DIV_12:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_12:before*/
+
+#DIV_15 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/medcard.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_15*/
+
+#DIV_15:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_15:after*/
+
+#DIV_15:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_15:before*/
+
+#DIV_16 {
+    align-items: center;
+    block-size: 78.2px;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    inline-size: 78.2px;
+    // inset-block-end: 115.325px;
+    // inset-block-start: 117.312px;
+    // inset-inline-end: 115.325px;
+    // inset-inline-start: 117.312px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, 156.416, 0);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+    animation: circle2 15s linear infinite;
+}
+
+
+/*#DIV_16*/
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0deg) translate(150px, -250px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(150px, -250px) rotate(-360deg);
+    }
+}
+
+#DIV_16:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_16:after*/
+
+#DIV_16:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_16:before*/
+
+// #DIV_17 {
+//     align-items: center;
+//     block-size: 68.425px;
+//     box-sizing: border-box;
+//     cursor: pointer;
+//     display: flex;
+//     height: 68.425px;
+//     inline-size: 68.425px;
+//     justify-content: center;
+//     min-block-size: auto;
+//     min-height: auto;
+//     min-inline-size: auto;
+//     min-width: auto;
+//     perspective-origin: 34.2125px 34.2125px;
+//     transform-origin: 34.2125px 34.2125px;
+//     width: 68.425px;
+//     font: 9.776px "Proxima Nova", sans-serif;
+// }
+// /*#DIV_17*/
+// #DIV_17:after {
+//     cursor: pointer;
+//     display: block;
+//     font: 9.776px "Proxima Nova", sans-serif;
+// }
+// /*#DIV_17:after*/
+// #DIV_17:before {
+//     cursor: pointer;
+//     display: block;
+//     font: 9.776px "Proxima Nova", sans-serif;
+// }
+
+/*#DIV_17:before*/
+
+// #DIV_18 {
+//     block-size: 12px;
+//     border-block-end-color: rgb(56, 116, 224);
+//     border-block-start-color: rgb(56, 116, 224);
+//     border-inline-end-color: rgb(56, 116, 224);
+//     border-inline-start-color: rgb(56, 116, 224);
+//     bottom: 85.75px;
+//     box-sizing: border-box;
+//     caret-color: rgb(56, 116, 224);
+//     color: rgb(56, 116, 224);
+//     column-rule-color: rgb(56, 116, 224);
+//     cursor: pointer;
+//     height: 12px;
+//     inline-size: 78.2px;
+//     inset-block-end: 85.75px;
+//     inset-block-start: -19.552px;
+//     inset-inline-end: 0px;
+//     inset-inline-start: 0px;
+//     left: 0px;
+//     perspective-origin: 39.1px 6px;
+//     position: absolute;
+//     right: 0px;
+//     text-align: center;
+//     text-decoration: none solid rgb(56, 116, 224);
+//     top: -19.552px;
+//     transform-origin: 39.1px 6px;
+//     white-space: nowrap;
+//     width: 78.2px;
+//     border: 0px none rgb(56, 116, 224);
+//     font: 9.776px "Proxima Nova", sans-serif;
+//     outline: rgb(56, 116, 224) none 0px;
+//     transition: top 0.5s ease 0s;
+// }
+
+/*#DIV_18*/
+
+// #DIV_18:after {
+//     border-block-end-color: rgb(56, 116, 224);
+//     border-block-start-color: rgb(56, 116, 224);
+//     border-inline-end-color: rgb(56, 116, 224);
+//     border-inline-start-color: rgb(56, 116, 224);
+//     caret-color: rgb(56, 116, 224);
+//     color: rgb(56, 116, 224);
+//     column-rule-color: rgb(56, 116, 224);
+//     cursor: pointer;
+//     text-align: center;
+//     text-decoration: none solid rgb(56, 116, 224);
+//     white-space: nowrap;
+//     border: 0px none rgb(56, 116, 224);
+//     font: 9.776px "Proxima Nova", sans-serif;
+//     outline: rgb(56, 116, 224) none 0px;
+// }
+
+/*#DIV_18:after*/
+
+// #DIV_18:before {
+//     border-block-end-color: rgb(56, 116, 224);
+//     border-block-start-color: rgb(56, 116, 224);
+//     border-inline-end-color: rgb(56, 116, 224);
+//     border-inline-start-color: rgb(56, 116, 224);
+//     caret-color: rgb(56, 116, 224);
+//     color: rgb(56, 116, 224);
+//     column-rule-color: rgb(56, 116, 224);
+//     cursor: pointer;
+//     text-align: center;
+//     text-decoration: none solid rgb(56, 116, 224);
+//     white-space: nowrap;
+//     border: 0px none rgb(56, 116, 224);
+//     font: 9.776px "Proxima Nova", sans-serif;
+//     outline: rgb(56, 116, 224) none 0px;
+// }
+
+/*#DIV_18:before*/
+
+#DIV_19 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/diagnostics.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_19*/
+
+#DIV_19:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_19:after*/
+
+#DIV_19:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_19:before*/
+
+#DIV_20 {
+    align-items: center;
+    block-size: 78.2px;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    inline-size: 78.2px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, 78.208, -135.46);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+    animation: circle5 15s linear infinite;
+}
+
+
+/*#DIV_20*/
+
+@keyframes circle5 {
+    0% {
+        transform: rotate(0deg) translate(-30px, 280px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-30px, 280px) rotate(-360deg);
+    }
+}
+
+#DIV_20:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_20:after*/
+
+#DIV_20:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_20:before*/
+
+#DIV_23 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/record.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_23*/
+
+#DIV_23:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_23:after*/
+
+#DIV_23:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_23:before*/
+
+#DIV_24 {
+    align-items: center;
+    block-size: 78.2px;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    inline-size: 78.2px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, -78.208, -135.46);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+    animation: circle6 15s linear infinite;
+}
+
+
+/*#DIV_24*/
+
+@keyframes circle6 {
+    0% {
+        transform: rotate(0deg) translate(-110px, -260px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-110px, -260px) rotate(-360deg);
+    }
+}
+
+#DIV_24:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_24:after*/
+
+#DIV_24:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_24:before*/
+
+#DIV_27 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/self-diagnostics.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_27*/
+
+#DIV_27:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_27:after*/
+
+#DIV_27:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_27:before*/
+
+#DIV_28 {
+    align-items: center;
+    block-size: 78.2px;
+    // bottom: 115.325px;
+    box-sizing: border-box;
+    display: flex;
+    height: 78.2px;
+    inline-size: 78.2px;
+    justify-content: center;
+    // left: 117.312px;
+    // perspective-origin: 39.1px 39.1px;
+    position: absolute;
+    // right: 115.325px;
+    // top: 117.312px;
+    // transform: matrix(1, 0, 0, 1, -78.208, -135.46);
+    // transform-origin: 39.1px 39.1px;
+    width: 78.2px;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 1s ease 0s;
+    animation: circle7 15s linear infinite;
+}
+
+
+/*#DIV_24*/
+
+@keyframes circle7 {
+    0% {
+        transform: rotate(0deg) translate(200px, 200px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(200px, 200px) rotate(-360deg);
+    }
+}
+
+#DIV_28:after {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_24:after*/
+
+#DIV_28:before {
+    display: block;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_24:before*/
+
+#DIV_31 {
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    box-shadow: rgba(79, 94, 105, 0.235) 0px 0.9776px 3.9104px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 135px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    perspective-origin: 19.55px 19.55px;
+    transform-origin: 19.55px 19.55px;
+    width: 135px;
+    background: rgb(255, 255, 255) url("../../../assets/pics/san-curort-map.svg") repeat scroll 0% 0% / 100% padding-box border-box;
+    border-radius: 50%;
+    font: 9.776px "Proxima Nova", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*#DIV_27*/
+
+#DIV_31:after {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_27:after*/
+
+#DIV_31:before {
+    cursor: pointer;
+    font: 9.776px "Proxima Nova", sans-serif;
+}
+
+
+/*#DIV_27:before*/
+
+// answers
+:host ::ng-deep .p-button {
+    margin: 0 .5rem 0 0;
+    min-width: 10rem;
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-dialog .p-button {
+    min-width: 6rem;
+}
+
+.answers__button {
+    display: flex;
+    justify-content: center;
+}
+
+.answers__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & input,
+    button {
+        display: block;
+        border: none;
+    }
+}
+
+.answers__form-item {
+    margin-bottom: 40px;
+    &:first-child {
+        width: 55%;
+        margin-right: 58px;
+    }
+    &:nth-child(2) {
+        width: 35%;
+    }
+}
+
+.answers__form-theme {
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #6C6C6C !important;
+    margin-bottom: 28px;
+    &::placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #6C6C6C !important;
+    }
+}
+
+.answers__form-textarea {
+    width: 100%;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #6C6C6C !important;
+    resize: none;
+    border: none;
+    &::placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #6C6C6C !important;
+    }
+}
+
+.answers__form-input {
+    width: 100%;
+    height: 49px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #6C6C6C !important;
+}
+
+.answers__form-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF !important;
+    margin-bottom: 16px;
+}
+
+.answers__form-btn {
+    width: 224px;
+    height: 61px;
+    background: linear-gradient(0deg, #6CD8DD, #6CD8DD);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #13757A;
+    margin-right: 32px;
+    cursor: pointer;
+}

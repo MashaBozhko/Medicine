@@ -1,0 +1,83 @@
+<div class="sign">
+    <div class="container-log">
+        <div class="sign__wrapper">
+            <div class="sign__block">
+                <h2 class="sign__block-title">Регистрация</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="sign__form">
+
+                    <h4 class="sign__form-title">Имя</h4>
+                    <input formControlName="firstName" class="sign__form-input" type="text">
+                    <p class="form-error" *ngIf="registerForm.get('firstName').errors && registerForm.get('firstName').touched">
+                        Имя обязательно</p>
+
+                    <h4 class="sign__form-title">Фамилия</h4>
+                    <input formControlName="lastName" class="sign__form-input" type="text">
+                    <p class="form-error" *ngIf="registerForm.get('lastName').errors && registerForm.get('lastName').touched">
+                        Фамилия обязательно</p>
+
+                    <h4 class="sign__form-title">Отчество</h4>
+                    <input formControlName="patronymic" class="sign__form-input" type="text">
+                    <p class="form-error" *ngIf="registerForm.get('patronymic').errors && registerForm.get('patronymic').touched">
+                        Поле должно быть заполнено</p>
+
+                    <h4 class="sign__form-title">Пол</h4>
+                    <div class="gender">
+                        <label class="gender-item">
+                            <input class="sign__form-check" name="sex" formControlName="sex" required value="1" type="radio">
+                            <h4 class="sign__form-title">М</h4>
+                        </label>
+                        <label class="gender-item">
+                            <input class="sign__form-check"  formControlName="sex" name="sex" value="0" type="radio">
+                            <h4 class="sign__form-title">Ж</h4>
+                        </label>
+                    </div>
+
+
+
+                    <h4 class="sign__form-title">Дата рождения</h4>
+                    <input formControlName="date_birth" class="sign__form-input" type="date">
+                    <p class="form-error" *ngIf="registerForm.get('date_birth').errors && registerForm.get('date_birth').touched">
+                        Поле должно быть заполнено</p>
+
+                    <h4 class="sign__form-title">Email</h4>
+                    <input formControlName="email" class="sign__form-input" type="email">
+                    <p class="form-error" *ngIf="registerForm.get('email').errors && registerForm.get('email').touched">
+                        Email обязателен</p>
+
+
+                    <h4 class="sign__form-title">Место жительства</h4>
+                    <input formControlName="city" class="sign__form-input" type="text">
+                    <p class="form-error" *ngIf="registerForm.get('city').errors && registerForm.get('city').touched">
+                        Поле обязательно</p>
+
+                    <h4 class="sign__form-title">СНИЛС</h4>
+                    <input formControlName="snils" class="sign__form-input" type="text">
+                    <p class="form-error" *ngIf="registerForm.get('snils').errors && registerForm.get('snils').touched">
+                        СНИЛС не содержит столько символов!</p>
+
+                    <h4 class="sign__form-title">Пароль</h4>
+                    <input formControlName="password" class="sign__form-input" type="password">
+                    <p class="form-error" *ngIf="registerForm.get('password').errors && registerForm.get('password').touched">
+                        Пароль обязателен и должен содержать не менее 4 символов</p>
+
+                    <div class="access">
+                        <input class="sign__form-check" type="checkbox">
+                        <p class="sign__form-access">
+                            Нажимая на кнопку, вы даете согласие на обработку персональных данных
+                        </p>
+                    </div>
+
+
+                    <button class="sign__form-btn" type="submit" [disabled]="registerForm.invalid">Зарегистрироваться</button>
+
+                    <p class="sign__form-login">
+                        Есть аккаунт?
+                        <span class="sign__form-reg" (click)="goToLogin()"> Войдите!</span>
+                    </p>
+
+                </form>
+                <!-- <button (click)="onSubmit()" class="sign__form-btn">Зарегистрироваться</button> -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<div class="clinic">
+
+    <div class="clinic__wrapper">
+        <h1 class="clinic-title">Об учреждении</h1>
+
+        <div class="about__administration">
+            <h2 class="about__administration-title">Администрация:</h2>
+
+            <div class="about__administration-table">
+                <div class="about__administration-table-top">
+                    <h3 class="about__administration-top-title">Должность:</h3>
+                    <h3 class="about__administration-top-title">Ф.И.О.</h3>
+                    <h3 class="about__administration-top-title">Часы приёма:</h3>
+                    <h3 class="about__administration-top-title">Телефон:</h3>
+                    <hr>
+                </div>
+
+                <div class="about__administration-table-main">
+                    <p class="about__administration-main-text about__administration-main">Главный врач</p>
+                    <a class="about__administration-main-link about__administration-main" href="#">Пудова И.А.</a>
+                    <p class="about__administration-main-text about__administration-main">Вторник 13.00-14.00
+                        <br> Четверг 13.00-14.00
+                    </p>
+                    <a class="about__administration-main-link about__administration-main" href="#">(831) 246-36-81</a>
+                    <hr>
+                </div>
+
+                <div class="about__administration-table-main">
+                    <p class="about__administration-main-text  about__administration-main">Заместитель главного врача по медицинской части</p>
+                    <a class="about__administration-main-link  about__administration-main" href="">Мартынова С.В.</a>
+                    <p class="about__administration-main-text  about__administration-main">
+                        Вторник 09.00-11.00
+                        <br> Среда 13.00-15.00
+                        <br> Четверг 9.00-11.00
+                    </p>
+                    <a class="about__administration-main-link  about__administration-main" href="">(831) 246-03-22</a>
+                    <hr>
+                </div>
+
+                <div class="about__administration-table-main">
+                    <p class="about__administration-main-text  about__administration-main">Заместитель главного врача по экспертизе временной нетрудоспособности</p>
+                    <a class="about__administration-main-link  about__administration-main" href="">Князева Н.И.</a>
+                    <p class="about__administration-main-text  about__administration-main">Понедельник 13.00-15.00
+                        <br> Среда 09.00-10.00
+                        <br> Пятница 13.00-15.00
+                    </p>
+                    <a class="about__administration-main-link  about__administration-main" href="">(831) 246-03-22</a>
+                    <hr>
+                </div>
+
+                <div class="about__administration-table-footer">
+                    <p class="about__administration-footer-text">
+                        Заведующая дневным стационаром -
+                        <span class="about__administration-footer-title"> Зырянова Татьяна Викторовна</span> -
+                        <span class="about__administration-footer-phone"> (831) 246-21-30</span>
+                    </p>
+                    <p class="about__administration-footer-text">
+                        Заведующая терапией -
+                        <span class="about__administration-footer-title">Фролова Наталья Валерьевна</span> -
+                        <span class="about__administration-footer-phone"> (831) 246-07-33</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about__branches">
+            <h2 class="about__branches-title">Отделения:</h2>
+
+            <div *ngFor="let department of departments" class="about__branches-block">
+                <h3 class="about__branches-block-title">{{department.name}}:</h3>
+
+                <h4 *ngFor="let desc of department.description" class="about__branches-block-text">{{desc}}</h4>
+
+            </div>
+
+        </div>
+
+        <div class="about__documents">
+            <h2 class="about__documents-title">Учредительные документы:</h2>
+
+            <a *ngFor="let doc of documents" class="about__documents-link" href="{{doc.document_url}}">{{doc.description}}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,316 @@
+.clinic__wrapper {
+    width: 95%;
+}
+
+.polyclinic-title {
+    width: 45%;
+    height: 38px;
+    background: #3CB5BB;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 20px;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF !important;
+    margin-bottom: 20px;
+}
+
+.polyclinic__hello {
+    width: 100%;
+    height: 100%;
+    background: #D7F2F3;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.polyclinic__hello-img {
+    width: 237px;
+    height: 227px;
+    margin-right: 30px;
+}
+
+.polyclinic__hello-info {
+    max-width: 640px;
+}
+
+.polyclinic__hello-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000 !important;
+}
+
+.polyclinic__hello-text {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #383636 !important;
+}
+
+.polyclinic__hello-phone {
+    color: #000000 !important;
+}
+
+.polyclinic__hello-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 37px;
+}
+
+.polyclinic__hello-link {
+    height: 52px;
+    background: #3CB5BB;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF !important;
+    padding: 5px 34px;
+}
+
+.polyclinic__statistic {
+    width: 100%;
+    background: #D7F2F3;
+    border-radius: 10px;
+    padding: 30px 144px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 45px;
+}
+
+.polyclinic__statistic-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polyclinic__statistic-item {
+    width: 163px;
+    height: 163px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+    margin-bottom: 18px;
+}
+
+.polyclinic__statistic-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #3CB3BB;
+}
+
+.polyclinic__statictic-link {
+    background: #199096;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF !important;
+    text-align: center;
+    padding: 9px 23px;
+}
+
+.polyclinic__departament {
+    width: 100%;
+    height: 100%;
+    background: #A6E2E5;
+    border-radius: 10px;
+    padding: 38px 46px;
+    margin-bottom: 40px;
+}
+
+.polyclinic__departament-title {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.74);
+    margin-bottom: 26px;
+}
+
+.polyclinic__departament-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.polyclinic__departament-item {
+    width: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+.polyclinic__departement-img {
+    width: 100%;
+    height: 166px;
+}
+
+.polyclinic__departement-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(60, 179, 187, 0.81);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.polyclinic__driving {
+    background: #D7F2F3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px 45px;
+    margin-bottom: 45px;
+}
+
+.polyclinic__driving-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #383636;
+}
+
+.polyclinic__address {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    iframe {
+        border: 3px solid #3BB3BB;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    margin-bottom: 56px;
+}
+
+.polyclinic__address-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polyclinic__address-info {
+    width: 350px;
+    background: #A6E2E5;
+    border-radius: 10px;
+    padding: 17px 31px;
+    margin-bottom: 28px;
+}
+
+.polyclinic__address-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000 !important;
+    margin-bottom: 20px;
+}
+
+.polyclinic__address-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.polyclinic__address-follow {
+    height: 52px;
+    width: 228px;
+    background: #3CB5BB;
+    border-radius: 15px;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF !important;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+.polyclinic__news {
+    background: #D7F2F3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px 45px;
+    hr {
+        width: 100%;
+        height: 0px;
+        border: 1px solid #888888;
+    }
+}
+
+.polyclinic__news-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 51px;
+}
+
+.polyclinic__news-item {
+    max-width: 430px;
+}
+
+.polyclinic__news-img {
+    width: 100%;
+    height: 96px;
+    margin-bottom: 12px;
+}
+
+.polyclinic__news-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.polyclinic__news-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #383636;
+    margin-bottom: 16px;
+}
+
+.polyclinic__news-date {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #9E9E9E;
+}
+
+.polyclinic__news-all {
+    background: rgba(60, 181, 187, 0.72);
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFF8F8 !important;
+    padding: 7px 26px;
+    margin: 0 auto;
+    width: 340px;
+}

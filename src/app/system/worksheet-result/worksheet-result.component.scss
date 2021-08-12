@@ -1,0 +1,74 @@
+.worksheet {
+    margin: 0 auto;
+    max-width: 1100px;
+    font-family: Noto Sans;
+}
+
+.worksheet__title {
+    width: 350px;
+    height: 58px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px 28px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #556080;
+    margin-bottom: 43px;
+}
+
+.result__item {
+    background: #D7F2F3;
+    border-radius: 15px;
+    width: 100%;
+    padding: 32px 28px;
+    margin-bottom: 40px;
+}
+
+.result__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin-right: 5px;
+}
+
+.relust__item-text {
+    font-weight: 400;
+}
+
+.result__link {
+    background: #3CB3BB;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 28px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF !important;
+}
+
+.result__link-img {
+    width: 44px;
+    height: 44px;
+}
+
+.result__back {
+    width: 231px;
+    height: 49px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 2px solid #3CB5BB;
+    border-radius: 15px;
+    padding: 3px 39px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #3CB5BB !important;
+}

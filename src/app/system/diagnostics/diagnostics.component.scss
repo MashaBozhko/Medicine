@@ -1,0 +1,41 @@
+.diagnosis__list {
+    margin: 0 auto;
+    width: 900px;
+    padding: 0 15px;
+}
+
+.diagnosis__list-item {
+    width: 872px;
+    height: 240px;
+    margin-bottom: 24px;
+}
+
+.diagnosis__list-link {
+    position: relative;
+}
+
+.diagnosis__list-img {
+    width: 100%;
+}
+
+.diagnosis__list-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(60, 179, 187, 0.81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 82px 21px 150px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+
+.diagnosis__list-text-img {
+    margin-left: 50px;
+    width: 108px;
+    height: 108px;
+}

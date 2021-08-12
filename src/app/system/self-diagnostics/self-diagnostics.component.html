@@ -1,0 +1,777 @@
+<div class="main__info">
+    <div class="container">
+        <div class="self__wrapper">
+            <div class="special__tests">
+                <div class="tab">
+                    <button class="tablinks" (click)="openCity('Spec-test')">
+                    <a class="self__nav-title self__nav-active" >Специализированные тесты</a>
+                  </button>
+                    <button class="tablinks" (click)="openCity('Usual-test')">
+                    <a class="self__nav-title">Общий тест</a>
+                  </button>
+                    <button class="tablinks" (click)="openCity('Oncorisk')">
+                    <a class="self__nav-title" >Онкориск</a>
+                  </button>
+                </div>
+
+                <div id="Spec-test" class="tabcontent">
+                    <div class="self__table">
+                        <div class="self__table-row self__table-top">
+                            <h3 class="self__table-title">Наименование теста</h3>
+                            <h3 class="self__table-title">Диагностируется</h3>
+                            <h3 class="self__table-title">Оценка</h3>
+                            <h3 class="self__table-title">Дата проверки</h3>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                        <div class="self__table-row self__table-main">
+                            <p class="self__table-text">Обезглавненная мигрень</p>
+                            <p class="self__table-text">Мигрень без головной боли</p>
+                            <p class="self__table-text">10</p>
+                            <p class="self__table-text">16.06.2021 <br>18:00</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!---------------->
+                <div id="Usual-test" class="tabcontent">
+                    <form class="general__test">
+                        <div class="general__list">
+                            <form [formGroup]="testForm1" (ngSubmit)="onSubmit1()">
+                                <!-- age -->
+                                <div class="general__list-item">
+                                    <h2 class="general__list-title">Выберите возраст:</h2>
+                                    <h5>{{val}}</h5>
+                                    <p-slider [(ngModel)]="val"></p-slider>
+                                </div>
+                                <!-- gender -->
+                                <div class="general__list-item">
+                                    <h2 class="general__list-title">Выберите пол:</h2>
+                                    <div class="general__gender">
+                                        <div class="general__list-gender">
+                                            M<input type="radio" name="gender" id="men" (click)="changeQuestiong()">
+                                        </div>
+                                        <div class="general__list-gender">
+                                            W<input type="radio" name="gender" id="women" (click)="changeQuestiong()">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- body -->
+                                <div class="general__list-item">
+                                    <h2 class="general__list-title">Выберите беспокоющую часть тела:</h2>
+                                    <div class="general__body">
+                                        <div class="general__body-item">
+                                            <img class="general__body-img" src="./../../../assets/pics/body.png" alt="body">
+                                            <a href="#" title="Голова" class="general__body-link general__body-link-head"></a>
+                                            <a href="#" title="Верх живота" class="general__body-link general__body-link-chest"></a>
+                                            <a href="#" title="Низ живота" class="general__body-link general__body-link-stomach"></a>
+                                            <a href="#" title="Левая рука" class="general__body-link general__body-link-left__hand"></a>
+                                            <a href="#" title="Правая рука" class="general__body-link general__body-link-right__hand"></a>
+                                            <a href="#" title="Левая нога" class="general__body-link general__body-link-left__leg"></a>
+                                            <a href="#" title="Правая нога" class="general__body-link general__body-link-right__leg"></a>
+                                        </div>
+                                        <div class="general__body-item">
+                                            <img class="general__body-img" src="./../../../assets/pics/body-reverse.png" alt="body">
+                                            <a href="#" title="Затылок" class="general__body-link general__body-link-back-head"></a>
+                                            <a href="#" title="Позвоночник" class="general__body-link general__body-link-back-rear"></a>
+                                            <a href="#" title="Копчик" class="general__body-link general__body-link-back-stomach"></a>
+                                            <a href="#" title="Левая рука" class="general__body-link general__body-link-back-left__hand"></a>
+                                            <a href="#" title="Правая рука" class="general__body-link general__body-link-back-right__hand"></a>
+                                            <a href="#" title="Левая нога" class="general__body-link general__body-link-back-left__leg"></a>
+                                            <a href="#" title="Правая нога" class="general__body-link general__body-link-back-right__leg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- symp-s/an-s -->
+                                <div class="general__list-item">
+                                    <h2 class="general__list-title ">Выберите подходящие симптомы/анализы:</h2>
+                                    <div *ngIf="flag">
+                                        <div class="general__symptoms-analyzes">
+                                            <div class="general__sym-titles">
+                                                <a class="general__symptoms-analyzes-title" (click)="openSymptoms()">Список симптомов</a>
+                                                <a class="general__symptoms-analyzes-title" (click)="openAnalyzes()">Список анализов</a>
+                                            </div>
+                                            <div class="general__sym-list">
+                                                <div *ngIf="analyzesList_isOpen" class="general__sym-item">
+                                                    <p class="general__sym-notice">*Укажите, какие есть анализы*</p>
+                                                    <ul class="general__sym-choice">
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Общий анализ крови</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Иммунологический анализ крови</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Общий анализ мочи</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Биохимический анализ крови</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Электрокардиография</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Томография</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Кожные пробы</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Копрограмма (анализ кала)</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Функциональные тесты</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Инструментальные исследования</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Рентгенография</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Радионуклидное исследование</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Лапароскопия диагностическая</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Клинико-лабораторная гематология</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">ПЦР, полимеразная цепная реакция</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Микроскопия мазка</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Биопсия</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Тестирование, опросники </p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Генетические исследования</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div *ngIf="symptomsList_isOpen" class="general__sym-item">
+                                                    <p class="general__sym-notice">*Укажите, какие есть симптомы*</p>
+                                                    <ul class="general__sym-choice">
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Слабость / недомогание</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Потеря сознания</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Сыпь, прыщи, язвочки, другие изменения на коже</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Температура тела повышена</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Нарушения питания / усвоения / вкуса / метаболизма </p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Артериальное давление повышено (>140/90) в покое</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Отёки</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Путешествие или пребывание в необычном месте</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Обстоятельства работы, быта, семейные</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Температура тела ниже нормальной</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Жажда</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Потливость (не связанная с физической нагрузкой или жарой)</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Изменения нервной активности, ритма и настроения</p>
+                                                        </li>
+                                                        <li class="general__sym-point">
+                                                            <input class="general__sym-input" type="checkbox">
+                                                            <p class="general__sym-text">Длительное сдавление частей тела тяжелыми предметами (Сдавление частей тела или всего тела под завалами, обломками, в результате обрушения шахт).</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div *ngIf="!flag">
+                                        <h2>Женский тест</h2>
+                                    </div>
+
+                                </div>
+                                <!-- info -->
+                                <div class="general__list-item">
+                                    <h2 class="general__list-title ">Дополнительные сведения:</h2>
+                                    <div class="general__info">
+                                        <ul class="general__info-list">
+                                            <li class="general__info-item">
+                                                <input class="general__info-input" type="checkbox">
+                                                <p class="general__info-text">Я - врач, больной - рядом.</p>
+                                            </li>
+                                            <li class="general__info-item">
+                                                <input class="general__info-input" type="checkbox">
+                                                <p class="general__info-text">Быстрый режим (симптомчекер)</p>
+                                            </li>
+                                            <li class="general__info-item">
+                                                <input class="general__info-input" type="checkbox">
+                                                <p class="general__info-text">Понимаю, что определяются не все существующие болезни, и что лучший результат - когда отвечает сам больной, один или с врачом</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a class="general__link" href="#" type="submit">Начать диагностику</a>
+                            </form>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div id="Oncorisk" class="tabcontent">
+                    <div class="container">
+
+                        <form class="cancer" action="">
+                            <div class="cancer__window">
+                                <div class="cancer__item">
+                                    <p class="cancer__item-que">Выберите пол:</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Мужской</p>
+                                            <input class="cancer__item-input" type="radio" name="gender1">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Женский</p>
+                                            <input class="cancer__item-input" type="radio" name="gender1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cancer__window">
+                                <h2 class="cancer__window-title">Блок “Наследственность”:</h2>
+
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Наличие у кровных родственников злокачественных новообразований кишечника/ молочной железы/ тела матки (нужное подчеркнуть).</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer1">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Наличие рака желудка у кровных родственников.</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer2">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Наличие меланомы у кровных родственников.</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer3">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Наличие рака щитовидной железы у кровных родственников.</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer4">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Онкозаболевания у кровных родственников (вписать):</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer5">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cancer__window">
+                                <h2 class="cancer__window-title">Блок “Общие симптомы”:</h2>
+
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Выявляли ли у Вас ранее онкозаболевания?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer6">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Имеется ли за последние полгода потеря в весе (без веской причины)?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer7">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer7">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Повышается ли у Вас постоянно температура в течение длительного времени?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer9">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer9">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Прощупываете ли вы у себя какую-нибудь опухоль?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer10">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Есть ли у Вас симптомы анемии (бледность кожных покровов, головокружение, снижение артериального давления)?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer11">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer11">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="cancer__window-interpritation">Интерпретация: Если на 2 из 5 вопросов ответ ДА, рекомендовано:</p>
+                            </div>
+
+                            <div class="cancer__window">
+                                <h2 class="cancer__window-title">Блок “Кожа”:</h2>
+
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">У вас светлая кожа, светлые волосы и глаза?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer12">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer12">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Частое воздействие солнечных лучей (профессиональное, бытовое, увлечение солярием)?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer13">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer13">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Частый контакт с химическими канцерогенами, ионизирующим излучением?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer14">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer14">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Затрудняюсь ответить</p>
+                                            <input class="cancer__item-input" type="radio" name="answer14">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">У вас есть пигментное родимое пятно (невус) более 1,5 см?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer15">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer15">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">У Вас большое количество невусов (более 50)?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer16">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer16">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Затрудняюсь ответить</p>
+                                            <input class="cancer__item-input" type="radio" name="answer16">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Отмечаете ли Вы увеличение, уплотнение, кровоточивость родимого пятна, родинки?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer17">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer17">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Если ли у Вас на коже образования, которые изменили цвет, размер, стали кровоточить за последнее время; внутрикожные уплотнения, выступающие над поверхностью кожи, длительно не заживающие язвы?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer18">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer18">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Отмечаете ли Вы разрастание в некоторых участках кожи в виде бородавок?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer19">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer19">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Появился зуд, покалывание в области родимого пятна или родинки?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer20">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer20">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Есть ли увеличенные узлы на шее, над ключицей, в подмышечных, паховых областях?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer21">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer21">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Есть ли обильный ночной пот, кожный зуд?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer22">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer22">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="cancer__window-interpritation">Интерпретация: Если на вопросы 1-5 дан ответ ДА, то необходима консультация дерматолога.</p>
+                                <p class="cancer__window-interpritation">Если хотя бы на 1 из вопросов с 6 по 10 дан ответ ДА, необходимо рекомендовать консультацию онколога.</p>
+                            </div>
+
+                            <div class="cancer__window">
+                                <h2 class="cancer__window-title">Блок “Органы полости рта и глотки”:</h2>
+
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">У Вас есть контакт с жидкими смолами, продуктами переработки нефти?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer23">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer23">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Есть ли у Вас многократное травмирование слизистой оболочки полости рта (неудобные зубные протезы, острые сколы зубов и т.д.) ?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer24">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer24">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Есть ли у Вас на губе, во рту, под языком уплотненные участки, язвы, какие –либо разрастания, незаживающие трещины?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer25">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer25">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Затрудняюсь ответить</p>
+                                            <input class="cancer__item-input" type="radio" name="answer25">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">У Вас наблюдается не проходящая боль в полости рта, припухлость и утолщение языка длительное время, чувство онемения языка?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer26">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer26">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Затрудняюсь ответить</p>
+                                            <input class="cancer__item-input" type="radio" name="answer26">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="cancer__window-interpritation">Интерпретация:</p>
+                            </div>
+
+                            <div class="cancer__window">
+                                <h2 class="cancer__window-title">Блок “Гортань”:</h2>
+
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Отмечаете ли ощущение присутствие инородного тела?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer27">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer27">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Отмечаете ли Вы осиплость голоса, изменение тембра голоса, осиплость голоса 2 недели и более?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer28">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer28">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Затрудняюсь ответить</p>
+                                            <input class="cancer__item-input" type="radio" name="answer28">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">Отмечаете ли ощущение присутствие инородного тела?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer29">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer29">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancer__item">
+                                    <p class="cancer__item-answer">У Вас наблюдается не проходящая боль в полости рта, припухлость и утолщение языка длительное время, чувство онемения языка?</p>
+                                    <div class="cancer__item-container">
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Да</p>
+                                            <input class="cancer__item-input" type="radio" name="answer30">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Нет</p>
+                                            <input class="cancer__item-input" type="radio" name="answer30">
+                                        </div>
+                                        <div class="cancer__item-point">
+                                            <p class="cancer__item-name">Затрудняюсь ответить</p>
+                                            <input class="cancer__item-input" type="radio" name="answer30">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="cancer__window-interpritation">Интерпретация:</p>
+                            </div>
+
+                            <a class="cancer-link" href="#" type="submit">Отправить</a>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>

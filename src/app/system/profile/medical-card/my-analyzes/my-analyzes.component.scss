@@ -1,0 +1,63 @@
+.medmap__analyzes {
+    width: 949px;
+    background: #3CB5BB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 0 auto 100px;
+    padding: 70px;
+}
+
+.medmap__analyzes-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+    margin-bottom: 58px;
+}
+
+.medmap__analyzes-item-name {
+    width: 22%;
+}
+
+.medmap__analyzes-item-doctor {
+    width: 22%;
+}
+
+.medmap__analyzes-item-date {
+    width: 22%;
+}
+
+.medmap__analyzes-item-instruction {
+    width: 25%;
+}
+
+.medmap__analyzes-list {
+    width: 807px;
+    height: 100%;
+}
+
+.medmap__analyzes-item-title,
+.medmap__analyzes-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.medmap__analyzes-item-text {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.medmap__analyzes-item-link {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #555555 !important;
+}

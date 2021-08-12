@@ -1,0 +1,65 @@
+<div class="main__info">
+    <div class="container">
+        <div class="clinic">
+            <div class="clinic__menu">
+
+                <div class="clinic__menu-item">
+                    <a id="polyclinic" class="clinic__menu-link clinic__menu-link-active" [routerLink]="['', 'clinic', 'polyclinic']" routerLinkActive="active">Поликлиника</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a id="about-institution" class="clinic__menu-link" (click)="goToClinic('about-institution')">Об учереждении</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a id="operating-mode" class="clinic__menu-link" [routerLink]="['', 'clinic', 'operating-mode']" routerLinkActive="active">Режим работы</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a id="clinic-staff" class="clinic__menu-link" [routerLink]="['', 'clinic', 'clinic-staff']" routerLinkActive="active">Сотрудники поликлиники</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a id="service-list" class="clinic__menu-link" [routerLink]="['', 'clinic', 'service-list']" routerLinkActive="active">Перечень услуг</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a id="medical-certificates" class="clinic__menu-link" [routerLink]="['', 'clinic', 'medical-certificates']" routerLinkActive="active">Медицинские справки и осмотры</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a   class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Отделение реабилитации</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a  class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Диспансеризация за 1 день</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a  class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Вакансии</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a  class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Рекомендациии</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a id="reviews" class="clinic__menu-link" [routerLink]="['', 'clinic', 'reviews']" routerLinkActive="active">Отзывы</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a  class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Для волонтерских организаций</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a  class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Бережливая поликлиника</a>
+                </div>
+
+                <div class="clinic__menu-item">
+                    <a  class="clinic__menu-link" [routerLink]="['', 'clinic', '']" routerLinkActive="active">Приглашаем к сотрудничеству организации</a>
+                </div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

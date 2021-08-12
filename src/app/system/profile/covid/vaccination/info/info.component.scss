@@ -1,0 +1,43 @@
+* {
+    font-family: Noto Sans !important;
+}
+
+hr {
+    height: 0px;
+    border: 1px solid #383636;
+    filter: blur(2px);
+    margin: 25px auto;
+    width: 100%;
+}
+
+.vaccination-form__list-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #414141;
+    margin-bottom: 23px;
+}
+
+.vaccination-form__list-download-link {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #13757A !important;
+    width: 55 0px;
+}
+
+.vaccination-form__list-btn {
+    width: 141px;
+    background: #FFFFFF;
+    border: 2px solid #3CB5BB;
+    border-radius: 15px;
+    padding: 9px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #3CB5BB !important;
+    cursor: pointer;
+}

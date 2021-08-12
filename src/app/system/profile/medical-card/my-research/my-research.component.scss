@@ -1,0 +1,63 @@
+.medmap__research {
+    width: 949px;
+    background: #3CB5BB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 0 auto 100px;
+    padding: 71px;
+}
+
+.medmap__research-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+    margin-bottom: 59px;
+}
+
+.medmap__research-item-name {
+    width: 22%;
+}
+
+.medmap__research-item-doctor {
+    width: 22%;
+}
+
+.medmap__research-item-date {
+    width: 22%;
+}
+
+.medmap__research-item-instruction {
+    width: 25%;
+}
+
+.medmap__research-list {
+    width: 807px;
+    height: 100%;
+}
+
+.medmap__research-item-title,
+.medmap__research-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.medmap__research-item-text {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.medmap__research-item-link {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #555555 !important;
+}

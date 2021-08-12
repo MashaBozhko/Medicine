@@ -1,0 +1,33 @@
+.clinic {
+    display: flex;
+}
+
+.clinic__menu {
+    max-width: 320px;
+    margin-right: 5%;
+    width: 100%;
+}
+
+.clinic__menu-item {
+    margin-bottom: 24px;
+}
+
+.clinic__menu-link {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #383636;
+}
+
+.clinic__menu-link-active {
+    border-left: 3px solid #3CB5BB;
+    padding-left: 7px;
+    font-weight: 700;
+    color: #383636;
+}
+
+.clinic__wrapper {
+    margin: 0 auto;
+    width: 62%;
+}

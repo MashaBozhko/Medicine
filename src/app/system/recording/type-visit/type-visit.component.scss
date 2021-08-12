@@ -1,0 +1,41 @@
+.position
+{
+  margin-left: 360px;
+  margin-top: 20px;
+}
+.text
+{
+  font-family: Roboto;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-left: 260px;
+}
+
+.next
+{
+  cursor: pointer;
+  border-radius: 15px;
+  width:150px;
+  height: 51px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  background: linear-gradient(90deg, #5C50EC 0%, #BB3B3B 100%);
+  font-family: Roboto;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 80%;
+  text-decoration: none;
+}
+.btnAll
+{
+  margin-left: 30%;
+}
+
+.random
+{
+  margin: 5% 2% 0 15%;
+}

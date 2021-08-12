@@ -1,0 +1,350 @@
+* {
+    font-family: Noto Sans;
+}
+
+.diagnosis__wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 15px;
+    padding: 65px 11px;
+}
+
+.record-title {
+    width: 450px;
+    height: 49px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94;
+    text-align: center;
+    padding: 0 70px;
+    margin-bottom: 51px;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-body {
+    width: 1000px;
+    height: 100%;
+    padding: 250px 75px 0 75px;
+}
+
+.diagnosis__examination-card {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.dropdown {
+    margin-bottom: 39px;
+    height: 44px;
+}
+
+.dropdown-mini {
+    width: auto;
+    height: 44px;
+}
+
+.dropdown-mini-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin: 39px 0 16px;
+}
+
+.diagnosis__examination-btn {
+    width: 100%;
+    height: 44px;
+    margin: 0 auto;
+    background: #3CB3BB;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff !important;
+    text-align: left;
+    padding: 4px 20px;
+    margin-bottom: 39px;
+    border: none;
+}
+
+.diagnosis__examination-dropdown {
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636 !important;
+    border: 1px solid #545b62;
+    border-radius: 15px;
+}
+
+.diagnosis__examination-dropdown-mini {
+    width: 467px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636 !important;
+    border: 1px solid #545b62;
+    border-radius: 15px;
+}
+
+.diagnosis__examination-dropdown>.dropdown-item,
+.diagnosis__examination-dropdown-mini>.dropdown-item {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+.page {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin: 15px auto;
+    max-width: 1100px;
+}
+
+.container-calendar {
+    background: #ffffff;
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td,
+.table-calendar th {
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid #00BCD4;
+}
+
+
+/* sunday */
+
+.date-picker:nth-child(1) {
+    color: rgb(255, 0, 0);
+}
+
+
+/* friday */
+
+.date-picker:nth-child(6) {
+    color: green;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    background: #3CB3BB;
+}
+
+.record__accordeon-btns {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+}
+
+.record__accordeon-btn {
+    width: 210px;
+    height: 39px;
+    background: #FFFFFF;
+    border: 2px solid #3CB5BB;
+    border-radius: 10px;
+    padding: 3px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3CB5BB !important;
+}
+
+.record-hr {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #383636;
+    filter: blur(2px);
+    margin: 40px 0;
+}
+
+.record__main-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+    margin-bottom: 16px;
+}
+
+.examination__list-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+}
+
+.examination__list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+}
+
+.examination__list-important-info {
+    height: 167px;
+    background: #13757A;
+    border-radius: 0px 0px 10px 10px;
+    margin: -28px -28px 35px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .examination__list-text {
+        color: #FFFFFF !important;
+    }
+}
+
+.examination__list-img {
+    margin-right: 28px;
+}
+
+.examination__link-worksheet {
+    margin: 0 auto 30px;
+    width: 526px;
+    height: 49px;
+    background: #3CB5BB;
+    border-radius: 15px;
+    padding: 0 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF !important;
+}
+
+.examination__link-download {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 250px;
+    & img {
+        margin-right: 10px;
+        width: 44px;
+        height: 44px;
+    }
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+}
+
+.examination__examination-time-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #383636;
+    margin-bottom: 23px;
+    margin-top: 26px;
+}
+
+.examination__examination-timelist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.examination__examination-timelist-item {
+    width: 80px;
+    height: 48px;
+    background: #15A2A9;
+    border-radius: 10px;
+    padding: 14px 17px;
+    margin: 0 26px 10px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF !important;
+}

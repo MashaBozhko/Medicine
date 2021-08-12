@@ -1,0 +1,107 @@
+.clinic__wrapper {
+    width: 900px;
+}
+
+.clinic-title {
+    height: 49px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94 !important;
+    margin-bottom: 31px;
+    width: 200px;
+}
+
+.reviews hr {
+    width: 872px;
+    height: 0px;
+    border: 1px solid #555555;
+    margin: 32px 0;
+}
+
+.reviews__input {
+    width: 872px;
+    min-height: 68px;
+    background: #3CB5BB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews__input-area {
+    background-color: transparent !important;
+    border: none;
+    color: #ffffff !important;
+    width: 90%;
+    margin-right: 20px;
+    resize: none;
+    &::placeholder {
+        color: #ffffff !important;
+    }
+    &:focus {
+        border: none;
+    }
+}
+
+.reviews__input-link {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.reviews__input-img {
+    width: 40px;
+    height: 40px;
+}
+
+.reviews__list-item {
+    width: 872px;
+    background: #A6E2E5;
+    border-radius: 15px;
+    margin-bottom: 21px;
+    padding: 17px 24px;
+    display: flex;
+}
+
+.reviews__list-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.reviews__list-info {
+    max-width: 650px;
+}
+
+.reviews__list-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    margin-bottom: 5px;
+}
+
+.reviews__list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #383636;
+}
+
+.reviews__list-date {
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #383636;
+    display: flex;
+    align-items: center;
+}

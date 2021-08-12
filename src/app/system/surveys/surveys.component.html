@@ -1,0 +1,126 @@
+<div class="main__info">
+    <div class="container">
+        <div class="diagnosis__wrapper">
+            <h1 class="record-title">Обследование</h1>
+            <div class="card-body diagnosis__examination-card">
+
+                <h3 class="record__main-title">Выберите тип обследования:</h3>
+                <!--  -->
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Выберите тип анализа:
+                    </a>
+
+                    <div class="dropdown-menu diagnosis__examination-dropdown" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Общий (клинический) анализ крови развернутый</a>
+                        <a class="dropdown-item" href="#">Исследование уровня эритроцитов в крови</a>
+                        <a class="dropdown-item" href="#">Исследование уровня лейкоцитов в крови</a>
+                    </div>
+                </div>
+
+                <div class="analyzes__list">
+                    <div class="analyzes__list-item">
+                        <input class="analyzes__list-input" type="radio" name="kind">
+                        <p class="analyzes__list-text">По полису ДМС</p>
+                    </div>
+                    <div class="analyzes__list-item">
+                        <input class="analyzes__list-input" type="radio" name="kind">
+                        <p class="analyzes__list-text">По полису ОМС</p>
+                    </div>
+                    <div class="analyzes__list-item">
+                        <input class="analyzes__list-input" type="radio" name="kind">
+                        <p class="analyzes__list-text">Платные услуги</p>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown-mini">
+
+                    <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Тип учреждения:
+                    </a>
+
+                    <div class="dropdown-menu diagnosis__examination-dropdown-mini" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Общий (клинический) анализ крови развернутый</a>
+                        <a class="dropdown-item" href="#">Исследование уровня эритроцитов в крови</a>
+                        <a class="dropdown-item" href="#">Исследование уровня лейкоцитов в крови</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown-mini">
+
+                    <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Регион:
+                    </a>
+
+                    <div class="dropdown-menu diagnosis__examination-dropdown-mini" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Общий (клинический) анализ крови развернутый</a>
+                        <a class="dropdown-item" href="#">Исследование уровня эритроцитов в крови</a>
+                        <a class="dropdown-item" href="#">Исследование уровня лейкоцитов в крови</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown-mini">
+
+                    <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Район:
+                     </a>
+
+                    <div class="dropdown-menu diagnosis__examination-dropdown-mini" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Общий (клинический) анализ крови развернутый</a>
+                        <a class="dropdown-item" href="#">Исследование уровня эритроцитов в крови</a>
+                        <a class="dropdown-item" href="#">Исследование уровня лейкоцитов в крови</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown-mini">
+
+                    <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Название учреждения:
+                    </a>
+
+                    <div class="dropdown-menu diagnosis__examination-dropdown-mini" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Общий (клинический) анализ крови развернутый</a>
+                        <a class="dropdown-item" href="#">Исследование уровня эритроцитов в крови</a>
+                        <a class="dropdown-item" href="#">Исследование уровня лейкоцитов в крови</a>
+                    </div>
+                </div>
+
+                <h3 class="record__main-title">Выберите дату прихода:</h3>
+                <!-- календарь -->
+                <p-calendar [firstDayOfWeek]="1" [(ngModel)]="value"></p-calendar>
+                <!--  -->
+
+                <div class="diagnosis__examination-time">
+                    <h4 class="diagnosis__examination-time-title">Выберете время:</h4>
+
+                    <div class="diagnosis__examination-timelist">
+                        <a class="diagnosis__examination-timelist-item" href="#">08:30</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:45</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:30</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:45</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:30</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:45</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:30</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">08:45</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                        <a class="diagnosis__examination-timelist-item" href="#">09:00</a>
+                    </div>
+                </div>
+
+
+                <!--  -->
+                <a class="record__accordeon-btn" href="#">Готово</a>
+            </div>
+        </div>
+
+    </div>
+</div>

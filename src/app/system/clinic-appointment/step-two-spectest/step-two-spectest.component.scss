@@ -1,0 +1,303 @@
+.steptwo__wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.steptwo__title {
+    width: 605px;
+    background: #9FE5E9;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #696D94;
+    padding: 0 71px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.steptwo-block {
+    background: #D7F2F3;
+    border-radius: 15px;
+    padding: 60px;
+    font-family: Noto Sans;
+}
+
+.general__test {
+    width: 892px;
+    height: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000 !important;
+}
+
+.general__list-item {
+    max-width: 756px;
+    margin: 0 auto 111px;
+    & h5 {
+        margin-bottom: 21px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 34px;
+        color: #383636;
+    }
+}
+
+.general__list-title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #383636 !important;
+    margin-bottom: 30px;
+}
+
+.general__gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.general__list-gender {
+    margin: 0 auto;
+    max-width: 790px;
+    max-height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.general__body {
+    margin: 0 auto;
+    max-width: 790px;
+    min-height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.general__body-item,
+.general__body-img {
+    width: 282px;
+    height: 100%;
+    position: relative;
+}
+
+.general__body-link {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    margin: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.general__body-link-head,
+.general__body-link-back-head {
+    top: 5px;
+    right: 120px;
+    width: 40px;
+    height: 50px;
+}
+
+.general__body-link-chest,
+.general__body-link-back-rear {
+    top: 90px;
+    right: 105px;
+    width: 70px;
+    height: 100px;
+}
+
+.general__body-link-stomach,
+.general__body-link-back-stomach {
+    top: 198px;
+    right: 115px;
+    width: 50px;
+    height: 60px;
+}
+
+.general__body-link-left__hand,
+.general__body-link-back-right__hand {
+    top: 130px;
+    right: 25px;
+    width: 60px;
+    height: 100px;
+}
+
+.general__body-link-right__hand,
+.general__body-link-back-left__hand {
+    top: 130px;
+    right: 195px;
+    width: 60px;
+    height: 100px;
+}
+
+.general__body-link-right__leg,
+.general__body-link-back-left__leg {
+    top: 265px;
+    right: 155px;
+    width: 60px;
+    height: 270px;
+}
+
+.general__body-link-left__leg,
+.general__body-link-back-right__leg {
+    top: 265px;
+    right: 65px;
+    width: 60px;
+    height: 270px;
+}
+
+.general__sym-item-none {
+    display: none;
+}
+
+.general__symptoms-analyzes {
+    margin: 0 auto;
+    max-width: 790px;
+}
+
+.general__sym-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.general__symptoms-analyzes-title {
+    width: 277px;
+    background: rgba(110, 224, 232, 0.4);
+    border-radius: 10px;
+    padding: 3px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #2A8F96 !important;
+    cursor: pointer;
+    &:hover {
+        background: #C3E0E2;
+    }
+}
+
+.general__sym-notice {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000 !important;
+    margin-bottom: 26px;
+}
+
+.general__sym-choice {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000 !important;
+}
+
+.general__sym-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.general__sym-input {
+    margin-right: 15px;
+}
+
+.general__sym-text {
+    max-width: 700px;
+}
+
+.general__info {
+    margin: 0 auto;
+    max-width: 790px;
+}
+
+.general__info-item {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000 !important;
+    margin-bottom: 30px;
+}
+
+.general__info-input {
+    margin-right: 15px;
+}
+
+.general__info-text {
+    max-width: 700px;
+}
+
+.general__link {
+    display: block;
+    width: 169px;
+    background: #FFFFFF;
+    border: 2px solid #3CB3BB;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 3px 40px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #3CB3BB !important;
+    text-align: center;
+}
+
+.page {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background: rgba(60, 181, 187, 0.78);
+    border-radius: 10px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #535568 !important;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background: rgba(108, 216, 221, 0.65);
+    color: #696D94 !important;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background: rgba(108, 216, 221, 0.65);
+    color: #696D94 !important;
+}

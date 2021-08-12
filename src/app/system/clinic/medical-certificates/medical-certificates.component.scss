@@ -1,0 +1,47 @@
+.clinic__wrapper {
+    width: 1040px;
+}
+
+.certificates__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.certificates__list-link {
+    width: 872px;
+    height: 274px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF !important;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+.certificates__list-img {
+    width: 100%;
+    height: 274px;
+    border-radius: 10px;
+}
+
+.certificates__list-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(60, 179, 187, 0.81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 41px 82px;
+}
+
+.certificates__list-text-img {
+    width: 108px;
+    height: 108px;
+    margin-left: 50px;
+}
